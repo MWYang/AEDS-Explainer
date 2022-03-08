@@ -16,7 +16,7 @@
 
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <title>Automating NYC</title>
+  <title>What is an AEDS?</title>
   <!--find favicons here: https://realfavicongenerator.net/favicon_result?file_id=p1d90r0r5bi041kt81ro912qnm1h6
   <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
@@ -59,10 +59,10 @@
       <div class="col-md">
 
         <div data-scroll="toggle(.fromBottomIn, .fromBottomOut)">
-          <h1 id="website_title">Automating NYC</h1>
+          <h1 id="website_title">What is an AEDS?</h1>
         </div>
         <div data-scroll="toggle(.fromBottomIn, .fromBottomOut)">
-          <h2 id="website_subtitle">and (en)coding inequality?</h2>
+          <h2 id="website_subtitle">(automated employment decision making systems)</h2>
         </div>
 
         <div id="skyline_drawing" aria-label="Animated line drawing of New York City skyline"></div>
@@ -83,28 +83,17 @@
 
   <ul class="nav fixed-top flex-column vertical-center definitions_hidden" id="navbar-side">
     <li class="nav-item">
-      <a class="nav-link active" href="#introduction"><span class="desktop_nav">Introduction</span> <i class="fas fa-circle mobile_nav"></i></a>
-    </li>
-
-    <li class="nav-item">
-      <a class="nav-link" href="#Porfirio"><span class="desktop_nav">Why Do ADSs Matter?</span> <i class="fas fa-circle mobile_nav"></i></a>
+      <a class="nav-link active" href="#introduction"><span class="desktop_nav">Defining an ADS</span> <i class="fas fa-circle mobile_nav"></i></a>
     </li>
 
     <li class="nav-item">
       <a class="nav-link" href="#avocados"><span class="desktop_nav">What are Algorithms?</span> <i class="fas fa-circle mobile_nav"></i></a>
     </li>
 
-    <li class="nav-item sub_nav">
+<!--     <li class="nav-item sub_nav">
       <a class="nav-link" href="#toyAlgo"><span class="desktop_nav">Toy Algorithm</span> <i class="fas fa-circle mobile_nav"></i></a>
-    </li>
+    </li> -->
 
-    <li class="nav-item">
-      <a class="nav-link" href="#frameworks"><span class="desktop_nav">What Makes ADSs Good or Bad?</span> <i class="fas fa-circle mobile_nav"></i></a>
-    </li>
-
-    <li class="nav-item sub_nav">
-      <a class="nav-link" href="#design-decisions-header"><span class="desktop_nav">Design Decisions</span> <i class="fas fa-circle mobile_nav"></i></a>
-    </li>
 
     <li class="nav-item">
       <a class="nav-link" href="#Examples"><span class="desktop_nav">Examples</span> <i class="fas fa-circle mobile_nav"></i></a>
@@ -123,324 +112,46 @@
     </li>
 
     <li class="nav-item">
-      <a class="nav-link" href="#getActive"><span class="desktop_nav">Get Active</span> <i class="fas fa-circle mobile_nav"></i></a>
-    </li>
-
-    <li class="nav-item">
-      <a class="nav-link" href="#aboutUs"><span class="desktop_nav">About Us</span> <i class="fas fa-circle mobile_nav"></i></a>
+      <a class="nav-link" href="#aboutUs"><span class="desktop_nav">Credits</span> <i class="fas fa-circle mobile_nav"></i></a>
     </li>
   </ul>
 
-
-
-  <div class="fixed-action-btn desktop_only">
-    <a class="btn-floating btn-large salmon ads_alert" href="https://www1.nyc.gov/site/adstaskforce/events/events.page" target="_blank">
-      <img src="img/megaphone_white.png" class="alert_button" alt="Floating pink button with a white megaphone inside">
-    </a>
-    <ul>
-      <li><a class="btn-floating alert_text" href="https://www1.nyc.gov/site/adstaskforce/events/events.page" target="_blank">&nbsp;&nbsp;Learn about the ADS Task Force!&nbsp;&nbsp;</a></li>
-
-
-    </ul>
-  </div>
-
-
-
-
-
-
   <div data-spy="scroll" data-target="#navbar-side" data-offset="0">
     <!-- intro bubbles -->
-
-    <div class="container page" id="introduction">
-      <a id="first_page"></a>
-      <div class="row align-items-center">
-        <div class="col"></div>
-        <div class="col-md-8 intro_emphasis" data-scroll="toggle(.fromBottomIn, .fromBottomOut) ">
-          <p>Maybe you've heard that New York City has been using <b>algorithms</b> to improve our lives.
-          </p>
-        </div>
-        <div class="col"></div>
+    <div class="container page new_section" id="introduction">
+      <div data-scroll="toggle(.fromBottomIn, .fromBottomOut) once">
+        <h1 class="chapter_number">1</h1>
+        <br>
+        <h1 class="chapter_title">Defining an ADS</h1>
       </div>
+    </div>
 
-      <div class="row align-items-center">
-        <div class="col-md-2"></div>
-        <div class="col-md-5 intro_paragraphs" data-scroll="toggle(.fromBottomIn, .fromBottomOut)">
-          <p>Like <a href="http://www.govtech.com/public-safety/New-York-City-Fights-Fire-with-Data.html" target="_blank"> preventing fires</a> by predicting and inspecting high-risk buildings.
-          </p>
-        </div>
-        <div class="col-md-5"></div>
-      </div>
-
-      <div class="row align-items-center">
-        <div class="col-md-5"></div>
-        <div class="col-md-5 intro_paragraphs" data-scroll="toggle(.fromBottomIn, .fromBottomOut)">
-          <p>
-            Or <a href="https://www.nytimes.com/2014/12/07/nyregion/how-game-theory-helped-improve-new-york-city-high-school-application-process.html" target="_blank" title="Opens in new window"> reworking high school admissions</a> to more
-            effectively match students.
-          </p>
-        </div>
-        <div class="col-md-2"></div>
-      </div>
-
-      <div class="row align-items-center">
-        <div class="col"></div>
-        <div class="col-md-8 intro_paragraphs" data-scroll="toggle(.fromBottomIn, .fromBottomOut)">
-          <p class="intro_emphasis">Or maybe you've heard that they're making people's lives <strong> worse</strong>.
-          </p>
-        </div>
-        <div class="col"></div>
-      </div>
-
-      <div class="row align-items-center">
-        <div class="col-md-2"></div>
-        <div class="col-md-5 intro_paragraphs" data-scroll="toggle(.fromBottomIn, .fromBottomOut)">
-          <p>Like <a href="https://www.nyclu.org/en/stop-and-frisk-data" target="_blank"> targeting Black and Latinx communities</a> with stop and frisk.
-          </p>
-        </div>
-        <div class="col-md-5"></div>
-      </div>
-
-      <div class="row align-items-center">
-        <div class="col-md-5"></div>
-        <div class="col-md-5 intro_paragraphs" data-scroll="toggle(.fromBottomIn, .fromBottomOut)">
-          <p>Or <a href="https://www.propublica.org/article/machine-bias-risk-assessments-in-criminal-sentencing" target="_blank"> setting bail and sentencing using an algorithm</a> where the results were biased against Black people.
-          </p>
-        </div>
-        <div class="col-md-2"></div>
-      </div>
-
+    <div class="container page">
       <div class="row align-items-top">
-        <div class="col-2">
+        <div class="col">
           <p class="intro_paragraphs"><br></p>
           <p class="helper" data-scroll="toggle(.fromBottomIn, .fromBottomOut)">hover for more information!</p>
         </div>
         <div class="col-md-5" data-scroll="toggle(.fromBottomIn, .fromBottomOut)">
-          <p id="define_ads" class="intro_paragraphs">These are all examples of <a class="popover_word" href="javascript:void(0)" tabindex="0" class="popover-dismiss" data-toggle="popover" title="NYC Local Law 49" data-content="ADSs are ''computerized implementations of algorithms, including those derived from machine learning or other data
-            processing or artificial intelligence techniques, which are used to make or assist in making decisions.''">automated decision systems</a> (ADSs)
-            &mdash; processes that rely on computerized components to make or influence a decision.
+          <p id="define_ads" class="intro_paragraphs"><a class="popover_word" href="javascript:void(0)" tabindex="0" class="popover-dismiss" data-toggle="popover" title="NYC Local Law 49" data-content="ADSs are ''computerized implementations of algorithms, including those derived from machine learning or other data
+            processing or artificial intelligence techniques, which are used to make or assist in making decisions.''">Automated decision systems</a> (ADSs)
+            are processes that rely on computerized components to make or influence a decision.
           </p>
         </div>
-        <div class="col-2"></div>
-      </div>
-
-      <div class="row align-items-center">
-        <div class="col"></div>
-        <div class="col-md-8">
-          <div class="intro_emphasis" data-scroll="toggle(.fromBottomIn, .fromBottomOut)">
-            <p>We want to empower New Yorkers to advocate for ADSs that work to undo unjust systems instead of encoding inequality.
-            </p>
-          </div>
-        </div>
-        <div class="col-md"></div>
-      </div>
-
-    </div>
-
-    <!-- MEJIA STORY -->
-    <div id="Porfirio" class="container page new_section">
-      <div data-scroll="toggle(.fromBottomIn, .fromBottomOut) once">
-        <h1 class="chapter_number">1</h1><br>
-        <h1 class="chapter_title">Why Do ADSs Matter?</h1>
-      </div>
-      <div class="row align-items-center">
-        <div class="col-md-6">
-          <div>
-            <h3>Just ask Porfirio Mejia.*</h3>
-          </div>
-
-          <p class="body_emphasis">Since 2012, Porfirio's been running 128 P&L Deli Grocery, a bodega in Washington Heights.</p>
-          <p>Locals know they can count on him for groceries, even when times are tough. Just as important, the bodega serves as a space for building community &mdash; a place where neighbors go to hang out, watch baseball, and smoke cigars.
-          </p>
-          <p> Like many of his neighbors, Porfirio is a Dominican immigrant. He works with an anti-hunger advocacy group and knows the importance of the Supplemental Nutrition Assistance Program (SNAP), also
-            known as food stamps. More than half of his customers bought their groceries with SNAP benefits from the US Department of Agriculture (USDA). </p>
-          <p>But when their benefits hadn't come in yet, <strong> he let frequent customers take groceries home trusting that they would come back later to settle their bills, like an informal IOU system</strong>. This IOU system allowed Porfirio to help
-            members of his community feel secure about their food even if they felt insecure about their finances.
-          </p>
-          <p class="citation">*Original reporting by <a href="https://theintercept.com/2018/10/08/food-stamps-snap-program-usda/" target="_blank">The Intercept and and The New Food Economy</a></p>
-
-        </div>
-        <div class="col-md-6">
-          <div id="bodega_drawing" aria-label="Animated line drawing of Porfirio's bodega"></div>
-        </div>
-      </div>
-
-
-
-      <div class="row align-items-center">
-        <div class="col-md-6 desktop_only">
-          <div id="mejia_drawing" aria-label="Animated line drawing of Porfirio facing right"></div>
-        </div>
-        <div class="col-md-6">
-          <div>
-            <h3> In 2018, a computer program almost put his bodega out of business.</h3>
-          </div>
-          <div>
-            <p>Porfirio got a notice from the USDA that his store was disqualified from accepting SNAP on suspicion of food
-              stamp fraud. Earlier that year, the City, coordinating with the USDA, started
-              using a computer program to find cases of trading cash for food stamps. </p>
-          </div>
-          <div>
-            <p class="body_emphasis"> While the computer program hasn't been made public, it's likely that Porfirio's IOU system triggered the fraud suspicion.
-            </p>
-          </div>
-        </div>
-        <div class="col-md-6 mobile_only">
-          <div id="mejia_drawing_mobile" aria-label="Animated line drawing of Porfirio facing right"></div>
-        </div>
-      </div>
-
-
-
-      <div class="row align-items-center">
-        <div class="col"></div>
-        <div class="col-md-11">
-          <h3 class="centered-header"> The automated decision system (ADS) looked like this</h3>
-        </div>
-        <div class="col"></div>
-      </div>
-
-      <div class="row align-items-center" data-scroll="toggle(.fromBottomIn, .fromBottomOut) once">
-        <div class="col-md-4 center">
-          <span class="algorithm_icons">
-            <i class="fas fa-shopping-cart"></i>
-          </span>
-        </div>
-
-        <div class="col-md-4">
-          <div class="row align-items-center">
-            <div class="col-md-4 center">
-              <span class="algorithm_icons"><i class="fas fa-desktop"></i></span>
-            </div>
-            <div class="col-md-8 code_block">
-              <div id="typed-strings">
-                <b>if</b> single item purchase &gt; $100 <br>
-                <b>and</b> multiple such purchases <br>
-                <b>then</b> flag for fraud <br>
-              </div>
-              <span id="typed"></span>
-            </div>
-          </div>
-
-        </div>
-
-        <div class="col-md-4 center">
-          <span class="algorithm_icons"><i class="far fa-envelope"></i><span>
-        </div>
-      </div>
-
-      <div class="row" data-scroll="toggle(.fromBottomIn, .fromBottomOut) once">
-        <div class="col-md-4">
-          <h4 class="center">1. Sales Data</h4>
-          <p>Sales data gets tracked on food stamp cards like electronic benefit transfer (EBT) cards and sent to the USDA.</p>
-        </div>
-
-        <div class="col-md-4">
-          <h4 class="center">2. Fraud Detection</h4>
-          <p>A computer program uses an <a class="popover_word" href="javascript:void(0)" tabindex="0" class="popover-dismiss" data-toggle="popover"
-              data-content="You can think of an <b>algorithm</b> as a series of steps to evaluate data and reach a decision.<br><br>In an ADS, an algorithm is a detailed, computerized set of instructions. You'll learn how we use algorithms every day in the next section.">algorithm</a>
-            and sales data to flag potential fraud. The algorithm used by the program may have noticed large one-time purchases made at P&L Deli
-            and mistakenly assumed it was a case of 'cash for food stamps' fraud. </p>
-        </div>
-
-        <div class="col-md-4">
-          <h4 class="center">3. Fraud Notice</h4>
-          <p> Then, USDA staff sent a fraud notice to Porfirio.</p>
-        </div>
-      </div>
-      <br><br>
-
-      <div class="row align-items-center">
-        <div class="col"></div>
-        <div class="col-md-7">
-          <h3> Porfirio is struggling to keep P&L Deli going.</h3>
-          <p>His sales have dropped by 30%.<br><br> The USDA
-            told Porfirio to show them itemized receipts to prove his innocence, but Porfirio's registers were only able to print total sales figures. The
-            letters
-            his customers sent in as proof were deemed insufficient evidence.<br><br>Porfirio has called the USDA, but no one has been able to reverse the decision made by the algorithm.
-          </p>
-        </div>
-        <div class="col"></div>
-      </div>
-
-      <div class="row align-items-center" data-scroll="toggle(.fromBottomIn, .fromBottomOut) once">
-        <div class="col"></div>
-        <div class="col-md-8">
-          <div>
-            <div class="body_takeaway"> Using a flawed algorithm, this automated decision system almost destroyed Porfirio's livelihood and hurt people who really needed food.</div>
-          </div>
+        <div class="col-md-5" data-scroll="toggle(.fromBottomIn, .fromBottomOut)">
+          <h3>Then, an automated <i>employment</i> decision making system is an ADS used in the process of employment &mdash; either hiring an employee or promoting one.
         </div>
         <div class="col"></div>
       </div>
 
       <div class="row align-items-center">
         <div class="col"></div>
-        <div class="col-md-7">
-          <div>
-            <h3 id="bigPicture"> Why should we worry about this?</h3>
-          </div>
-          <div>
-            <p> P&L Deli wasn't alone: the majority of businesses impacted by this new system have been in low-income neighborhoods like Porfirio's.<br><br>ADSs seem to keep expanding into more areas of our lives. From policing to
-              school assignments, the decisions made by ADSs can have far-reaching consequences for all of us.</p>
-          </div>
-          <div>
-            <p class="body_emphasis">Governments tell us ADSs are being used to increase efficiency and improve service-delivery. But, as Porfirio's experience shows, that might have unintended harmful consequences.
-            </p>
-          </div>
-        </div>
-        <div class="col"></div>
-      </div>
-
-
-      <div class="row align-items-center">
-        <div class="col"></div>
-        <div class="col-md-7">
-          <div>
-            <h3> But completely human systems also mess up, right?</h3>
-          </div>
-          <div>
-            <p> Definitely. Just look back to the <a href="https://www.wired.com/story/ideas-joi-ito-insurance-algorithms" target="_blank">history of housing segregation and redlining.</a> </p>
-          </div>
-
-          <p>Even though human-centric systems also make mistakes, ADSs are unique in the risk they pose. At the same time, if ADSs are created thoughtfully, they can be powerful tools to improve our lives and society. </p>
-
-        </div>
-        <div class="col"></div>
-      </div>
-      <div class="row align-items-top">
-        <div class="col"></div>
-        <div class="col-md-5">
-          <p class="center"> <i class="pros_cons" data-feather="minus-circle"></i> </p>
-          <ul class="indented-bullet-points browser-default">
-            <li>ADSs can work at a <strong>more rapid pace</strong> and at a <strong>larger scale</strong> than human decision processes. This could accelerate injustices.</li>
-            <li>When they make mistakes, ADSs <strong>might not have human checks</strong> to override or course-correct them. </li>
-            <li>ADSs can be used to <strong>increase policing and criminalization</strong> of marginalized communities.</li>
-            <li>Implementing ADSs is often used to <strong>justify collecting a lot more data</strong> about people, breaching personal privacy.</li>
-          </ul>
-        </div>
-        <div class="col-md-5">
-          <p class="center"> <i class="pros_cons" data-feather="plus-circle"></i> </p>
-          <ul class="indented-bullet-points browser-default">
-            <li>The <strong>scale and speed of ADSs could be used to bring benefits </strong>to the communities that most need them when government resources and time are limited.</li>
-            <li>ADSs <strong> can build in more transparency</strong> than human systems so we know exactly how a decision is being made.</li>
-            <li>Since ADSs are using a lot more data, <strong> they might be able to see patterns that we can't see on our own</strong>, helping us uncover our own biases.</li>
-
-          </ul>
-        </div>
-        <div class="col"></div>
-      </div>
-
-      <div class="row align-items-center">
-        <div class="col"></div>
-        <div class="col-md-8">
-          <div data-scroll="toggle(.fromBottomIn, .fromBottomOut)">
-            <div class="body_takeaway">ADSs might be able to help us in powerful ways, but they can also make problems like racism, discrimination, surveillance, and inequality much worse, much faster.</div>
-          </div>
+        <div class="col-md-7" data-scroll="toggle(.fromBottomIn, .fromBottomOut)">
+          <h3>A key component of ADS are <i>algorithms.</i></h3>
         </div>
         <div class="col"></div>
       </div>
     </div>
-
 
     <!-- TOY ALGO -->
     <div class="container page new_section" id="avocados">
@@ -456,7 +167,7 @@
         <div class="col"></div>
         <div class="col-md-7">
           <h3>They're just instructions.</h3>
-          <p>Like in Porfirio's case, all ADSs use computer programs that are made up of algorithms &mdash; detailed sets of automated, computerized instructions. These algorithms work
+          <p>All ADSs use computer programs that are made up of algorithms &mdash; detailed sets of automated, computerized instructions. These algorithms work
             together to complete a task.
         </div>
         <div class="col"></div>
@@ -543,42 +254,9 @@
         </div>
         <div class="col"></div>
       </div>
-      <div class="row align-items-center">
-        <div class="col"></div>
-        <div class="col-md-4">
-          <p>In some cases, people have control over what steps the algorithm takes. People like you decide which variables are the most important in buying
-            avocados or
-            predicting that a place is committing food stamp fraud.
-          </p>
-          <p class="row_nopad">In other cases, data is given to a computer, the computer finds patterns in the data, and then decides which variables are important based on the patterns it finds.</p>
-        </div>
-        <div class="col-md-3">
-          <img src="img/two_avocados.png" alt="Two avocado halves with the pits still inside" id="two_avocados">
-        </div>
-        <div class="col"></div>
-      </div>
+      
 
-      <div class="row align-items-center">
-        <div class="col"></div>
-        <div class="col-md-7">
-          <p class="row_nopad">When a computer finds patterns on its own, rather than being told which variables are important, the set of instructions it uses is called a <a class="popover_word" href="javascript:void(0)" tabindex="0"
-              class="popover-dismiss" data-toggle="popover"
-              data-content="<p><b>Machine learning algorithms</b> find pattens in data, often to make a prediction or classify an object.</p> <p>An algorithm might find patterns from past avocados you've bought and then predict which avocado in a new pile you want.</p>">machine
-              learning algorithm</a>. They
-            are often less transparent because we don't
-            always
-            know why the computer places more
-            or less importance on different variables.
-          </p>
-        </div>
-        <div class="col"></div>
-      </div>
-      <!--TOY ALGO-->
-      <!--Fun Quote for Easter Egg
- “To create a model, then, we make choices about what’s important enough to include, simplifying the world into a toy version that can be easily understood and from which we can infer important facts and actions. We expect it to handle only one job and accept that it will occasionally act like a clueless machine, one with enormous blind spots.”
--->
-
-      <div class="row align-items-center">
+      <!-- <div class="row align-items-center">
         <div>
           <h3 id="toyAlgo"> Can I play with an algorithm?</h3>
         </div>
@@ -631,448 +309,12 @@
 
         </div>
 
-      </div>
-
-      <div class="row align-items-center">
-        <div class="col"></div>
-        <div class="col-md-8">
-          <div data-scroll="toggle(.fromBottomIn, .fromBottomOut) once">
-            <div class="body_takeaway">
-              Algorithms are always influenced by humans because we decide what data to use and, often, which variables are important.
-            </div>
-          </div>
-        </div>
-        <div class="col"></div>
-      </div>
-
-    </div>
-
-
-    <!-- frameworks-->
-    <div class="container page new_section" id="frameworks">
-      <div data-scroll="toggle(.fromBottomIn, .fromBottomOut) once">
-        <h1 class="chapter_number">3</h1>
-        <br>
-        <h1 class="chapter_title">What Makes ADSs Good or Bad?</h1>
-      </div>
-      <div class="row align-items-center">
-        <div class="col"> </div>
-        <div class="col-md-7">
-          <h3>A good ADS addresses unjust systems</h3>
-          <p>Every ADS reflects a set of values, whether they’re stated or not. We think that in an unequal and unjust world, the ADSs we build should strive for equity. If they don’t, they risk worsening the unjust systems that exist.</p>
-        </div>
-        <div class="col"></div>
-      </div>
-
-      <div class="row align-items-center">
-        <div class="col"> </div>
-        <div class="col-md-7">
-          <h3>What’s an unjust system?</h3>
-          <p class="body_emphasis">An unjust system is a set of political, cultural, and economic conditions that perpetuate inequality.
-          </p>
-          <p>For example, think of access to credit and financial resources.</p>
-          <p>Poor communities and communities of color often have limited access to credit. This is the legacy of policies like redlining that prevented people who lived in non-White and
-            immigrant neighborhoods from getting mortgages. The racial and class prejudices of bankers led to discrimination against groups that they stereotyped as less reliable. Even today, the
-            kinds of lenders in communities of color are often high-fee check-cashing services rather than banks.</p>
-          <p>All of these conditions create a system that reinforces poverty and prevents people from building wealth.</p>
-        </div>
-        <div class="col"></div>
-      </div>
-
-      <div class="row align-items-center">
-        <div class="col"> </div>
-        <div class="col-md-7">
-          <h3>How can ADSs address these systems?</h3>
-          <p>We can start with the ADS’s purpose &mdash; what it’s intended to accomplish.</p>
-          <p class="body_emphasis">At a minimum, an ADS’s purpose should include actively <b>understanding the unjust systems it's operating within</b>. At best, ADSs will actively <b>work to undo the injustice</b>.</p>
-          <p>In Porfirio’s case, the USDA’s ADS failed to account for his customers’ lack of access to credit and the need for an informal IOU system. If the USDA had understood the unjust system it was operating within, it could have designed its
-            ADS to distinguish between real fraud and Porfirio’s method for extending credit.
-          </p>
-          <p>Even better, if the USDA sought to undo injustice, it could design the ADS to target the conditions that lead to poor credit access. The ADS might identify areas to increase SNAP benefits, make them more flexible, or use even bolder
-            solutions.
-          </p>
-        </div>
-        <div class="col"></div>
-      </div>
-
-
-
-      <div class="row align-items-center">
-        <div class="col"> </div>
-        <div class="col-md-7">
-          <h3>Isn’t increasing efficiency a good enough purpose?</h3>
-          <p>Nope.
-          </p>
-          <p>Most government ADSs are intended to increase efficiency. For example, the USDA’s ADS was meant to efficiently catch SNAP (food stamp) fraud. A computer is faster than a human at looking through thousands of pages of financial records.
-          </p>
-          <p>But efficiency alone is not a good purpose. Efficiency speeds up processes, but if that process is already creating inequality, speeding it up makes things worse.
-          </p>
-        </div>
-        <div class="col"></div>
-      </div>
-
-      <div class="row align-items-center">
-        <div class="col"></div>
-        <div class="col-md-8">
-          <div data-scroll="toggle(.fromBottomIn, .fromBottomOut) once">
-            <div class="body_takeaway">
-              ADSs are a unique opportunity to acknowledge and address the assumptions and existing decision-making processes that might perpetuate an unjust system.
-            </div>
-          </div>
-        </div>
-        <div class="col"></div>
-      </div>
-
-
-
-      <div class="row align-items-center">
-        <div class="col"></div>
-        <div class="col-md-7">
-          <h3>We have a good purpose, now what?</h3>
-          <p>If the purpose of the ADS is good because it understands or better yet undoes unjust systems, we need to make sure that we design the ADS to accomplish this purpose.
-          </p>
-        </div>
-        <div class="col"></div>
-      </div>
-
-      <div class="row align-items-center" data-scroll="toggle(.fromBottomIn,.fromBottomOut) once">
-        <div class="col"></div>
-        <div class="col-md-10">
-          <h3 class="centered-header" id="design-decisions-header">There are five design decisions we should think about:<br> <span id="impact-style">impact</span> <span id="bias-style">bias</span> <span
-              id="explainability-style">explainability</span> <span id="automation-style">automation</span> and <span id="flexibility-style">flexibility</span>.
-          </h3>
-        </div>
-        <div class="col"></div>
-      </div>
-
-      <!-- Impact-->
-
-      <div class="row align-items-top frameworks_row">
-        <div class="col"></div>
-        <div class="col-md-4 sticky sticky_card_section" align="center">
-          <div class="card impact-card small-card">
-            <div class="card-content">
-              <img src="img/impact.png" class="sticky_card_icon" alt="Exclamation mark icon">
-              <h3 class="front-card-title">Impact</h3>
-              <p class="front-card-body center"> Who is affected by the ADS and how?</p>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-1"></div>
-        <div class="col-md-5 impact_details">
-
-          <div class="body_takeaway">Who the ADS affects and how it affects them helps us evaluate the potential harm. </div>
-
-          <h3>Scale</h3>
-          <p><b>How many people might be affected by the ADS?</b></p>
-          <h3>Scope</h3>
-          <p><b>How deep of an impact will the decision have on affected people?</b> There's deep impact when a decision affects something important. For example, knowing which building might catch on fire is a matter of life and death. </p>
-
-          <p>Shallow impact is when a decision affects something inessential to life or when the impact is not very severe.
-          </p>
-
-          <h3>Vulnerability</h3>
-          <p><b>How vulnerable are the groups that the ADS impacts?</b> If an ADS impacts a group that has historically faced discrimination and removes resources from that group, the ADS is more likely to worsen inequality.</p>
-
-
-
-        </div>
-        <div class="col"></div>
-      </div>
-
-      <!--Bias-->
-
-      <div class="row align-items-top frameworks_row">
-        <div class="col"></div>
-        <div class="col-md-4 sticky sticky_card_section" align="center">
-          <div class="card machine-bias-card small-card">
-            <div class="card-content">
-              <img src="img/bias.png" class="sticky_card_icon" alt="Forward slash icon">
-              <h3 class="front-card-title">Bias</h3>
-              <p class="front-card-body center">What inputs in the ADS create problems?</p>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-1"></div>
-        <div class="col-md-5 bias_details">
-
-          <div class="body_takeaway">Bias in the data or algorithm might worsen unjust systems. </div>
-
-          <h3>Data</h3>
-          <p><b>Data is never objective. </b>We embed our human bias when we collect, store, and use data. All data is biased; it may contain errors or reflect existing inequalities in the world or both.</p>
-
-          <p>When data is biased, it might tell us to do something that's not purely objective. It might tell us to do something based on the existing biases of the world that it's capturing. </p>
-
-          <p>For example, if we use arrest data by neighborhood to distribute the police force, we may send police to the same neighborhoods that they have historically policed, which leads to even more collection of arrest data in those same
-            neighborhoods. This might then be used to justify sending even more police to that neighborhood. This creates a vicious cycle. </p>
-
-          <p>These biases can arise because all datasets, to some extent, are incomplete. It is impossible to capture the world absolutely and perfectly. The best datasets try to be as complete as they need to be for the purpose and acknowledge their
-            bias.</p>
-
-          <h3>Algorithmic Model</h3>
-          <p><b> The type of algorithm an ADS uses and the way it handles the variables and data points matter.</b> Choosing the best algorithm for the problem depends on the ADS's purpose. There are hundreds of different algorithms that each
-            calculate outputs slightly differently. There will always be trade-offs in deciding what model to use, and we must think carefully about each case and the potential harms.</p>
-
-          <p>If humans are determining specific components of the algorithm, this can also create bias. For many algorithms, humans will be determining the outcome of interest and the variables. These decisions are subjective because they are based
-            on our own values and world views. For example, if you don't know that geographic area is highly linked to race and socioeconomic status, you might accidentally bias the algorithm by including this variable.
-          </p>
-
-
-
-        </div>
-        <div class="col"></div>
-      </div>
-
-      <!--Explainability-->
-
-      <div class="row align-items-top frameworks_row">
-        <div class="col"></div>
-        <div class="col-md-4 sticky sticky_card_section" align="center">
-          <div class="card explainability-card small-card">
-            <div class="card-content">
-              <img src="img/explainability.png" class="sticky_card_icon" alt="Question mark icon">
-              <h3 class="front-card-title">Explainability</h3>
-              <p class="front-card-body center"> How easy is it for humans to understand how the ADS works?</p>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-1"></div>
-        <div class="col-md-5 explainability_details">
-
-          <div class="body_takeaway"> When an ADS is explainable, it's easier to pinpoint where problems arise. </div>
-
-          <h3>Transparency</h3>
-          <p>Before we can even begin to understand how an ADS works, we need to be able to find information about it. To be completely transparent, an ADS's algorithms and data (as long as privacy concerns are met) should be made publicly available
-            with documentation explaining them.</p>
-
-          <h3>Ease of Understanding</h3>
-          <p>Some algorithms are very easy to understand, like instructions for choosing an avocado. We know exactly which variables are going into the model and how they're weighted. </p>
-
-          <p>The avocado algorithm is a <a class="popover_word" href="javascript:void(0)" tabindex="0" class="popover-dismiss" data-toggle="popover"
-              data-content="A <b>decision tree</b> is a flowchart made up of branches which each represent a different variable. At each branch a decision is made until the end is reached. So for our avocados it looks like this: </p> <p class='center popover_paragraph'><img src='img/decisionTree.svg' class='popover_image' alt='A node connects to two other nodes. Each node connects to another two nodes that are unconnected to the first node.'></p>">decision
-              tree</a>. Super explainable. </p>
-
-          <p> Other algorithms can feel like a black box. We give the data to the computer and it gives us a decision, but we don't really know how it reached that decision. </p>
-
-          <p>A <a class="popover_word" href="javascript:void(0)" tabindex="0" class="popover-dismiss" data-toggle="popover"
-              data-content="<p>A <b>neural network</b> is an interconnected group of nodes, inspired by a human brain. Neural networks are very complicated and therefore difficult to understand. They look like this:</p> <p class='center popover_paragraph'><img src='img/network.svg' class='popover_image' alt='Three nodes on the left connect to four nodes in the middle which connect to one node on the right.'></p> ">neural
-              network</a> algorithm is not that explainable. </p>
-
-        </div>
-        <div class="col"></div>
-      </div>
-
-      <!-- Automation-->
-
-      <div class="row align-items-top frameworks_row">
-        <div class="col"></div>
-        <div class="col-md-4 sticky sticky_card_section" align="center">
-          <div class="card automation-card small-card">
-            <div class="card-content">
-              <img src="img/automation.png" class="sticky_card_icon" alt="Asterisk icon">
-              <h3 class="front-card-title">Automation</h3>
-              <p class="front-card-body center"> How much of the decision is made by the algorithm?</p>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-1"></div>
-        <div class="col-md-5 automation_details">
-
-          <div class="body_takeaway"> If the decision is made mostly automatically, it could worsen unjust systems without humans even knowing. </div>
-
-          <h3>Low Automation</h3>
-          <p>The ADS doesn't make a decision. It simply analyzes the data which is then used to inform a human decision. </p>
-          <p>Imagine a dashboard that tells you what percentage of reported potholes have been filled this month without suggesting a specific next action.</p>
-          <h3>Medium Automation</h3>
-          <p>The algorithm provides an advisory decision, but a human still looks over the decision and decides whether to implement it. </p>
-          <p>Imagine a scoring system that prioritizes buildings to inspect for fire risk. </p>
-
-          <h3>High Automation</h3>
-          <p>An algorithm makes a decision and the people using it simply implement that decision. </p>
-          <p>Imagine a traffic light system that sends you a ticket when it detects that you ran a red light.</p>
-
-
-
-        </div>
-        <div class="col"></div>
-      </div>
-
-      <!-- Flexibility-->
-
-      <div class="row align-items-top frameworks_row">
-        <div class="col"></div>
-        <div class="col-md-4 sticky sticky_card_section" align="center">
-          <div class="card flexibility-card small-card">
-            <div class="card-content">
-              <img src="img/flexibility.png" class="sticky_card_icon" alt="Tilde (Squiggly Line) icon">
-              <h3 class="front-card-title">Flexibility</h3>
-              <p class="front-card-body center"> Can the ADS be changed easily if people have feedback?</p>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-1"></div>
-        <div class="col-md-5 flexibility_details">
-
-          <div class="body_takeaway"> If there is a problem with the ADS, we want to be able to fix it. </div>
-
-          <h3>Feedback Mechanisms</h3>
-          <p>The best feedback is from people directly affected by the ADS or people who use the ADS on a regular basis.</p>
-          <p>Feedback could be in the form of an appeals mechanism, a complaint system, or something else.</p>
-          <h3>Ability and Access to Update</h3>
-          <p>While feedback is important, what a government can do with the feedback is limited based on whether or not they have the access and skills to update the algorithm. </p>
-          <p>This depends in part on who owns the ADS. Is it the government or a private company? Does the government have the in-house talent to update the algorithm?
-          </p>
-        </div>
-        <div class="col"></div>
-      </div>
-
-      <!-- Porfirio Cards -->
-      <div class="row align-items-center" id="Porfirio_framework">
-        <div class="col"></div>
-        <div class="col-md-10">
-          <h3 data-scroll="toggle(.fromBottomIn,.fromBottomOut) once" class="center"> Let's look at Porfirio's story through this framework.</h3>
-          <p class="body_emphasis center desktop_only">Click on the cards to open them</p>
-          <p class="body_emphasis center mobile_only">Tap on the cards to open them</p>
-        </div>
-        <div class="col"></div>
-      </div>
-
-      <div class="row card_row">
-        <div class="col-md-4">
-          <div class="card  case_cards activator impact-card">
-            <div class="card-content activator">
-              <span class="activator"><img src="img/impact.png" class="card_icon activator" alt="Exclamation mark icon"></span>
-              <h3 class="card-title activator">Impact<i class="right activator" data-feather="maximize-2"></i></h3>
-              <p class="activator">Who does the ADS affect and how?</p>
-            </div>
-            <div class="card-reveal">
-              <span class="card-title  impact-title">Impact<i class="fas fa-times right"></i></span>
-              <h4> Scale </h4>
-              <p>Large scale. The USDA algorithm affects any business that accepts food stamps. In New York City, 1.6 million low income people rely on
-                SNAP.</p>
-              <h4> Scope </h4>
-              <p>Deep. The loss of revenue for Porfirio was significant. Moreover, the community lost a reliable food source. </p>
-              <h4> Vulnerability </h4>
-              <p>The USDA algorithm impacts vulnerable communities because it impacts communities that likely rely on alternative financial systems, which are usually lower income and communities of color.</p>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="card  case_cards activator machine-bias-card">
-            <div class="card-content">
-              <span class="activator"><img src="img/bias.png" class="card_icon activator" alt="Forward slash icon"></span>
-              <h3 class="card-title activator">Bias<i class="right activator" data-feather="maximize-2"></i></h3>
-              <p>What inputs in the ADS create problems?</p>
-            </div>
-            <div class="card-reveal">
-              <span class="card-title  bias-title">Bias<i class="fas fa-times right"></i></span>
-              <h4>Data</h4>
-              <p>Because Porfirio's bodega is in a low-income neighborhood, he is more likely to have more customers with food stamps. While the data is technically accurate, it is geographically skewed so that bodegas like Porfirio's receive
-                more scrutiny whereas bodegas in rich neighborhoods receive less scrutiny.</p>
-              <h4> Algorithmic Model </h4>
-              <p>The algorithmic model the USDA used to identify 'cash for food stamps' fraud was using large one time purchases as a variable to indicate fraud. The model was designed in such a way that it couldn't distinguish between true fraud and
-                Porfirio's IOU system. It simply flagged certain transactions as fraudulent, so there was bias in the model against those kinds of transactions.</p>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-md-4">
-          <div class="card case_cards activator explainability-card">
-            <div class="card-content">
-              <span class="activator"><img src="img/explainability.png" class="card_icon activator" alt="Question mark icon"></span>
-              <h3 class="card-title activator">Explainability<i class="right activator" data-feather="maximize-2"></i></h3>
-              <p>How easy is it for humans to understand how the ADS works?</p>
-            </div>
-            <div class="card-reveal">
-              <span class="card-title  explainability-title">Explainability<i class="fas fa-times right"></i></span>
-              <p> The USDA's ADS is not transparent. We don't know exactly how this ADS or its algorithms work. Who looks at the results of the algorithm that is flagging cases of supposed fraud? What are the checks and balances around the
-                decision-making process? </p>
-
-              <p>If we knew more about the process and components of the ADS, we would be able to see if there were design decisions to mitigate mistakes like miscategorizing Porfirio's bodega.</p>
-
-            </div>
-          </div>
-        </div>
-
-      </div>
-
-      <div class="row card_row">
-        <div class="col-md-2"></div>
-        <div class="col-md-4">
-          <div class="card  case_cards activator automation-card">
-            <div class="card-content">
-              <span class="activator"><img src="img/automation.png" class="card_icon activator" alt="Asterisk icon"></span>
-              <h3 class="card-title activator">Automation<i class="right activator" data-feather="maximize-2"></i></h3>
-              <p>How much of the decision is made by the algorithm?</p>
-            </div>
-            <div class="card-reveal">
-              <span class="card-title  automation-title">Automation<i class="fas fa-times right"></i></span>
-              <h4> High </h4>
-              <p>As far as we know, the USDA algorithm automatically flags transactions it categorizes as "fraud" and sends out a letter to a business owner notifying them that their ability to accept SNAP will be
-                suspended
-                unless they prove otherwise.</p>
-
-              <p>It is unclear whether a USDA employee reviews the flagged transactions before such a letter is sent.</p>
-
-            </div>
-          </div>
-
-        </div>
-
-        <div class="col-md-4">
-          <div class="card case_cards activator flexibility-card">
-            <div class="card-content">
-              <span class="activator"><img src="img/flexibility.png" class="card_icon activator" alt="Tilde (Squiggly line) icon"></span>
-              <h3 class="card-title activator">Flexibility<i class="right activator" data-feather="maximize-2"></i></h3>
-              <p>Can the ADS be changed easily if people have feedback?</p>
-            </div>
-            <div class="card-reveal">
-              <span class="card-title  flexibility-title">Flexibility<i class="fas fa-times right"></i></span>
-              <h4> Feedback System </h4>
-              <p>The USDA's ADS is not very flexible because there is not a good feedback system from people who are directly affected by the ADS.</p>
-              <h4> Ability and Access to Update </h4>
-              <p>Although business owners have the ability to submit feedback if they believe they've been wrongly flagged, this feedback has to be in a very specific form. Moreover, there is no mechanism for businesses or others to tell the USDA
-                how it can improve its system.</p>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-2"></div>
-      </div>
-
-
-
-      <!-- end of frameworks section-->
-      <div class="row align-items-center">
-        <div class="col"></div>
-        <div class="col-md-7">
-
-          <h3>Each of these design decisions interacts with the others.</h3>
-          <p>For example, the more explainable an ADS is (explainability) the easier it is it give feedback and be able to update it (flexibility). But, this framework isn't cut and dry!</p>
-          <p>There are also elements we hope interact but don’t always. A government might state a good purpose, but might not make design decisions that reach this goal. The ADS must always be intentionally designed to achieve a good purpose.</p>
-          <p>When we ask good questions about the purpose and the design decisions and how they interact, we can create ADSs that acknowledge or undo unjust systems.</p>
-        </div>
-        <div class="col"></div>
-      </div>
-      <div class="row align-items-center">
-        <div class="col"></div>
-        <div class="col-md-8">
-          <div class="body_takeaway" data-scroll="toggle(.fromBottomIn, .fromBottomOut) once">We need to think about the bigger system when we develop the purpose and make design decisions.
-          </div>
-        </div>
-        <div class="col"></div>
-      </div>
-    </div>
-
-
-
-
-
-
+      </div> -->
 
     <!-- CASE STUDIES -->
     <div id="Examples" class="container page case_study new_section">
       <div data-scroll="toggle(.fromBottomIn, .fromBottomOut) once">
-        <h1 class="chapter_number">4</h1>
+        <h1 class="chapter_number">3</h1>
         <br>
         <h1 class="chapter_title">Examples</h1>
       </div>
@@ -1080,6 +322,7 @@
       <div class="row align-items-center">
         <div class="col"></div>
         <div class="col-md-10 cases_header">
+          <h3 class="center"> TODO: Apply similar language treatment to these examples.</h3>
           <h3 class="center"> Learn about some real ADSs being used in NYC.</h3>
         </div>
         <div class="col"></div>
@@ -1843,593 +1086,24 @@
     </div>
   </div>
 
-
-
-  <!-- Get Active Page -->
-  <div id="getActive" class="container page new_section">
-    <div data-scroll="toggle(.fromBottomIn, .fromBottomOut) once">
-      <h1 class="chapter_number">5</h1>
-      <br>
-      <h1 class="chapter_title">Get Active</h1>
-    </div>
-
-    <div class="row align-items-center">
-      <div class="col">
-      </div>
-      <div class="col-md-10">
-        <h4>We've seen how automating decision systems can increase discrimination and inequality. </h4>
-        <p> But this isn't inevitable. </p>
-        <p> We can decide when New York City should or shouldn't automate decisions. We can ask the tough questions to make sure that government systems don't leave out those of us who have historically been, or are currently being, ignored. We can
-          bring
-          together our diverse experiences to make our voices stronger. </p>
-      </div>
-      <div class="col">
-      </div>
-    </div>
-
-    <div class="row align-items-top">
-      <div class="col-md-4">
-        <div class="card card-get-active card-hover" class="active_card" data-toggle="modal" data-target=".buildpower_modal">
-          <div class="card-content">
-            <h3 class="center card-get-active-header">Build Power</h3>
-            <p class="card-get-active-body">Connect with other members of this advocacy community.</p>
-          </div>
-          <div class="modal fade buildpower_modal" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
-            <div class="modal-dialog modal-lg">
-              <div class="modal-content">
-                <div class="row modal-close">
-                  <div class="col-11"></div>
-                  <div class="col-1">
-                    <button type="button" class="btn btn-secondary modal-close-button" data-dismiss="modal"><b>X</b></button>
-                  </div>
-                </div>
-                <h4 class="center">Build Power</h4>
-                <div class="row">
-                  <div class="col"></div>
-                  <div class="col-md-10">
-                    Connect with organizations that are specifically working on how to make ADSs better for the most marginalized communities.
-                  </div>
-                  <div class="col"></div>
-                </div>
-                <div class="row">
-                  <div class="col"></div>
-                  <div class="col-md-10">
-                    <a href="https://ainowinstitute.org/" target="blank">AI Now Institute</a><br>
-                    <a href="https://cyber.harvard.edu/" target="blank">Berkman Klein</a><br>
-                    <a href="https://civic.mit.edu/" target="blank">Civic Media Lab, MIT</a><br>
-                    <a href="http://d4bl.org/" target="blank">Data 4 Black Lives</a><br>
-                    <a href="https://www.newschool.edu/digital-equity-lab/" target="blank">Digital Equity Laboratory at the New School</a><br>
-                    <a href="https://projects.iq.harvard.edu/digitalhks/home" target="blank">Digital HKS</a><br>
-                    <a href="http://greenlining.org/issues-impact/technology-equity/" target="blank">Greenlining (California)</a><br>
-                    <a href="https://foundation.mozilla.org/en/fellowships/" target="blank">Mozilla Foundation Fellows</a><br>
-                    <a href="https://www.odbproject.org/" target="blank">Our Data Bodies (Charlotte, NC; Detroit, MI; Los Angeles, CA)</a><br>
-                    <a href="https://www.upturn.org/" target="blank">Upturn</a><br>
-                  </div>
-                </div>
-                <div class="row">
-                  <div class="col"></div>
-                  <div class="col-md-10">
-                    If you're impacted or moved by specific issue, get connected with one of the many amazing organizing groups that are focused on it in New York City.
-                  </div>
-                  <div class="col"></div>
-                </div>
-                <div class="row">
-                  <div class="col-md-4">
-                    <p><strong>Child & Family Welfare</strong><br>
-                      <a href="https://cwop.org/" target="blank">Child Welfare Organizing Project</a><br>
-                      <a href="https://sco.org/featured-programs/center-for-family-life/" target="blank">Center for Family Life in Sunset Park</a><br>
-                      <a href="http://themarymitchellfyc.org/" target="blank">Mary Mitchell</a><br>
-                      <a href="https://nccpr.org/" target="blank">National Coalition for Child Protection Reform</a><br>
-                      <a href="https://www.qchnyc.org/" target="blank">Queens Community House</a><br>
-                      <a href="https://www.universitysettlement.org/us/" target="blank">University Settlement</a><br>
-                      <a href="https://www.ympj.org/" target="blank">Youth Ministries for Peace & Justice</a><br></p>
-
-                    <p><strong>Criminal Justice & Policing</strong><br>
-                      <a href="https://www.changethenypd.org/" target="blank">Community for Police Reform</a><br>
-                      <a href="https://fortunesociety.org/" target="blank">The Fortune Society</a><br>
-                      <a href="https://justleadershipusa.org/" target="blank">JustLeadership USA</a><br>
-                      <a href="https://nyuj.org/" target="blank">New Yorkers United for Justice</a><br>
-                      <a href="https://www.stopspying.org/" target="blank">Surveillance Technology Oversight Project</a><br>
-                      <a href="http://youthrepresent.org/" target="blank">Youth Represent</a><br></p>
-
-
-                    <p><strong>Economic Justice</strong><br>
-                      <a href="https://www.socialists.nyc/" target="blank">Democratic Socialists of America</a><br>
-                      <a href="https://jfrej.org/" target="blank">Jews for Racial & Economic Justice</a><br>
-                      <a href="https://www.neweconomynyc.org/" target="blank">New Economy Project</a><br>
-                      <a href="https://www.northwestbronx.org/" target="blank">Northwest Bronx Community & Clergy Coalition</a><br>
-                      <a href="https://www.participatorybudgeting.org/" target="blank">Participatory Budgeting Project</a></p>
-
-                    <p><strong>Education</strong><br>
-                      <a href="https://www.integratenyc.org/" target="blank">IntegrateNYC</a></p>
-
-                    <p><strong>Environmental, Health, & Transit Justice</strong><br>
-                      <a href="https://www.nyhcampaign.org/" target="blank">Campaign for NY Health</a><br>
-                      <a href="http://www.greenworker.coop/" target="blank">Green Workers Cooperative</a><br>
-                      <a href="http://www.nyrenews.org/" target="blank">NY Renews</a><br>
-                      <a href="http://www.ridersny.org/" target="blank">Riders Alliance</a><br>
-                      <a href="https://www.uprose.org/" target="blank">UpRose</a><br>
-                      <a href="https://www.weact.org/" target="blank">WE ACT</a></p>
-
-                    <p><strong>Gender & Sexuality Justice</strong><br>
-                      <a href="https://alp.org/" target="blank">Audre Lorde Project</a><br>
-                      <a href="http://www.fiercenyc.org/" target="blank">FIERCE</a><br>
-                      <a href="https://www.ggenyc.org/" target="blank">Girls for Gender Equity</a><br>
-                      <a href="https://www.alliedmedia.org/project-hajra" target="blank">Project Hajra</a><br>
-                      <a href="https://srlp.org/" target="blank">Sylvia Rivera Law Project</a><br>
-                      <a href="https://twitter.com/sasyouthnyc?lang=en" target="blank">Streetwise and Safe</a><br>
-                      <a href="https://transgenderlawcenter.org/" target="blank">Transgender Law Center</a><br>
-                      <a href="https://www.thewomanhoodprojectbronx.org/" target="blank">WomanHOOD Project</a><br>
-                      <a href="https://www.iamwomankind.org/" target="blank">WomanKind</a></p>
-                  </div>
-
-                  <div class="col-md-4">
-                    <p><strong>Housing & Homelessness</strong><br>
-                      <a href="https://anhd.org/" target="blank">Association for Neighborhood & Housing Development</a><br>
-                      <a href="https://www.bkcianyc.org/" target="blank">Banana Kelly Community Improvement Association</a><br>
-                      <a href="http://chhayacdc.org/" target="blank">Chhaya CDC</a><br>
-                      <a href="https://www.cuffh.org/" target="blank">Churches United for Fair Housing</a><br>
-                      <a href="https://nsacasa.wordpress.com/" target="blank">Community Action for Safe Apartments</a><br>
-                      <a href="https://coopersquare.org/" target="blank">Cooper Square Committee</a><br>
-                      <a href="https://www.crownheightstenantunion.org/" target="blank">Crown Heights Tenant Union</a><br>
-                      <a href="http://www.fifthave.org/" target="blank">Fifth Ave Committee</a><br>
-                      <a href="https://flatbushpower.org/" target="blank">Flatbush Tenant Coalition</a><br>
-                      <a href="https://goles.org/" target="blank">Good Old Lower East Side</a><br>
-                      <a href="https://www.housingdatanyc.org/" target="blank">Housing Data Coalition</a><br>
-                      <a href="https://impacctbrooklyn.org/" target="blank">IMPACCT Brooklyn</a><br>
-                      <a href="https://www.justfix.nyc/" target="blank">JustFix.Nyc</a><br>
-                      <a href="http://www.mirabalcenter.org/" target="blank">Mirabal Sisters Cultural & Community Center</a><br>
-                      <a href="http://www.nhnhome.org/" target="blank">Neighbors Helping Neighbors</a><br>
-                      <a href="http://picturethehomeless.org/" target="blank">Picture the Homeless</a><br>
-                      <a href="https://righttothecity.org/" target="blank">Right to the City Alliance</a><br>
-                      <a href="https://www.stnicksalliance.org/" target="blank">St. Nicks Alliance</a><br>
-                      <a href="https://tandn.org/" target="blank">Tenants & Neighbors</a><br>
-                      <a href="https://www.facebook.com/WoodsideontheMove/" target="blank">Woodside on the Move</a></p>
-
-                    <p><strong>Immigration</strong><br>
-                      <a href="http://www.africans.us/" target="blank">African Communities Together</a><br>
-                      <a href="http://www.atlasdiy.org/" target="blank">Atlas DIY</a><br>
-                      <a href="https://baji.org/" target="blank">Black Alliance for Just Immigration</a><br>
-                      <a href="https://www.cidadaoglobal.org/" target="blank">Cidadão Global</a><br>
-                      <a href="http://www.drumnyc.org/" target="blank">Desis Rising Up and Moving</a><br>
-                      <a href="https://familiesforfreedom.org/" target="blank">Families for Freedom</a><br>
-                      <a href="https://haitianrefugees.org/" target="blank">Haitian Women for Haitian Refugees</a><br>
-                      <a href="http://www.nynice.org/" target="blank">New Immigrant Community Empowerment</a><br>
-                      <a href="https://www.nyic.org/" target="blank">New York Immigration Coalition</a><br>
-                      <a href="http://www.panafricancdi.com/" target="blank">Pan-African Community Development Initiative</a><br>
-                      <a href="http://sapnanyc.org/" target="blank">Sapna NYC</a></p>
-                  </div>
-                  <div class="col-md-4">
-                    <p><strong>Workers’ & Labor Rights</strong><br>
-                      <a href="https://brandworkers.org/" target="blank">Brandworkers’ International</a><br>
-                      <a href="https://frontlineretail.org/" target="blank">Center for Frontline Retail</a><br>
-                      <a href="http://cswa.org/" target="blank">Chinese Staff & Workers Association</a><br>
-                      <a href="https://www.lacolmenanyc.org/" target="blank">La Colmena</a><br>
-                      <a href="https://www.damayanmigrants.org/" target="blank">Damayan Migrant Workers Association</a><br>
-                      <a href="http://www.domesticworkersunited.org/index.php/en/" target="blank">Domestic Workers United</a><br>
-                      <a href="https://www.facebook.com/flushingworkerscenter/" target="blank">Flushing Workers Center</a><br>
-                      <a href="http://laundryworkerscenter.org/" target="blank">Laundry Workers Center</a><br>
-                      <a href="https://www.domesticworkers.org/" target="blank">National Domestic Workers Alliance</a><br>
-                      <a href="https://www.nelp.org/" target="blank">National Employment Law Project</a><br>
-                      <a href="http://nmass.org/" target="blank">National Mobilization Against Sweatshops</a><br>
-                      <a href="https://nycworker.coop/home/" target="blank">New York City Network of Worker Cooperatives</a><br>
-                      <a href="http://www.nytwa.org/" target="blank">New York Taxi Workers’ Alliance</a><br>
-                      <a href="https://rocunited.org/staff-and-locals/new-york/" target="blank">Restaurant Opportunities Center</a><br>
-                      <a href="http://www.workersjustice.org/" target="blank">Worker’s Justice Project</a><br>
-
-                    <p><strong>Multi-Issue Organizing</strong><br>
-                      <a href="http://www.adhikaar.org/" target="blank">Adhikaar</a><br>
-                      <a href="https://www.aafe.org/" target="blank">Asian Americans for Equality</a><br>
-                      <a href="http://brooklynmovementcenter.org/" target="blank">Brooklyn Movement Center</a><br>
-                      <a href="https://bronxpower.org/" target="blank">BronxPOWER</a><br>
-                      <a href="https://caaav.org/" target="blank">CAAAV Organizing Asian Communities</a><br>
-                      <a href="https://www.cvhaction.org/" target="blank">Community Voices Heard</a><br>
-                      <a href="http://furee.org/" target="blank">Families United for Racial and Economic Justice</a><br>
-                      <a href="https://maketheroadny.org/" target="blank">Make the Road NY</a><br>
-                      <a href="http://minkwon.org/" target="blank">MinKwon Center for Community Action</a><br>
-                      <a href="https://m.facebook.com/Movement-for-Justice-in-El-Barrio-54775959685/" target="blank">Movement for Justice en El Barrio</a><br>
-                      <a href="https://www.nycommunities.org/" target="blank">New York Community for Change</a><br>
-                      <a href="https://nosquedamos.org/" target="blank">Nos Quedamos</a><br>
-                      <a href="http://www.ugnayanyouth.org/" target="blank">Ugnayan Youth</a><br>
-                      <a href="http://www.vocal-ny.org/" target="blank">Vocal NY</a><br></p>
-                  </div>
-                </div>
-              </div>
-
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-4">
-        <div class="card card-get-active card-hover" class="active_card" data-toggle="modal" data-target=".advocate_modal">
-          <div class="card-content">
-            <h3 class="center card-get-active-header">Advocate</h3>
-            <p class="card-get-active-body"> Contact your local elected officials to keep pushing the work of the ADS Task Force.</p>
-          </div>
-        </div>
-        <div class="modal fade advocate_modal" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
-          <div class="modal-dialog modal-lg">
-            <div class="modal-content">
-              <div class="row modal-close">
-                <div class="col-11"></div>
-                <div class="col-1">
-                  <button type="button" class="btn btn-secondary modal-close-button" data-dismiss="modal"><b>X</b></button>
-                </div>
-              </div>
-
-              <h4 class="center">Advocate</h4>
-              <div class="row">
-                <div class="col"></div>
-                <div class="col-md-10">
-                  <p>In May of 2018, Mayor de Blasio launched the Automated Decision Systems Task Force (ADS Task Force) to review “automated decision systems, commonly known as algorithms, through the lens of equity, fairness and
-                    accountability.” According to the <a href="https://www1.nyc.gov/site/adstaskforce/about/about-ads.page" target="blank">ADS Task Force website/a>, they are currently working on a report to be completed in late Fall 2019.</p>
-                  <p><strong>Now that you know about ADSs, you might have some ideas and questions that you want to share with the ADS Task Force!</strong> You can share your thoughts and questions with the ADS Task Force at future meetings or using
-                    <a href="https://www1.nyc.gov/site/adstaskforce/contact/contact.page" target="blank">this online submission form</a>. The ADS Task Force had its first public meetings on April 30 and May 30, 2019. You can check out the
-                    transcripts and video recordings of those public meetings <a href="https://www1.nyc.gov/site/adstaskforce/events/events.page" target="blank">here</a>, the ADS Task Force website "Past Events" section.</p>
-                  <p>If you didn't make it to the public meeting, there are still ways to stay involved. The best way to make sure the ADS Task Force is doing its work and tackling issues that interest you is to
-                    reach out to your local City Council member. You can go to "Who Represents Me? NYC" at <a href="http://www.mygovnyc.org/" target="blank">www.mygovnyc.org</a> to find out who represents you in New York City and State.</p>
-                  <p>Remember to ask your City Council member or the ADS Task Force about the purpose and design decisions we gave you! Ask things like:</p>
-                </div>
-                <div class="col"></div>
-              </div>
-              <div class="row">
-                <div class="col-md-6">
-                  <p><strong>Purpose</strong><br>
-                    What are the next ADSs that you think the City will be making?<br>
-                    Why do you think the City will add automation to that decision-making process? <br>
-                    How can I help make sure that the City says that the purpose of the automation is to [undo an unjust system]? I know that a neutral algorithm might worsen unjust systems.<br></p>
-                  <p><strong>Impact</strong><br>
-                    Who does this decision-making process impact? How many people?<br>
-                    What are the resources or services its impacting for those people?</p>
-                  <p><strong>Bias</strong><br>What are the biases in the dataset that the algorithm might be using? <br>
-                    How can we use those biases for good? <br>
-                    What is the model that the algorithm will be using?</p>
-                </div>
-                <div class="col-md-6">
-                  <p><strong>Explainability</strong><br>
-                    Will the government make this ADS transparent to the public? <br>
-                    Can you explain how the algorithm in this ADS works? <br>
-                    Can you explain the overall decision system of the ADS? </p>
-                  <p><strong>Automation</strong><br>
-                    Does the result of the algorithm determine the decision or does it just advise agency staff in making a decision? <br>
-                    Are agency staff trained about unjust systems? <br>
-                    If they saw a result that was unjust, would they know that it is unjust and how to correct it?</p>
-                  <p><strong>Flexibility</strong><br>
-                    How would people be able to give feedback if they think a decision from an ADS is wrong?<br>
-                    Could this ADS be changed to incorporate feedback?<br>
-                    Who updates the ADS and how often do they update it?</p>
-                </div>
-              </div>
-
-              <div class="row">
-                <div class="col"></div>
-                <div class="col-md-10">
-                  <p>If you’re not from New York City and interested in trying to get a Task Force in your city, check out the New York City legislation that brought about the ADS Task Force. More details on the law and its exact language is in
-                    <a href="https://legistar.council.nyc.gov/LegislationDetail.aspx?ID=3137815&GUID=437A6A6D-62E1-47E2-9C42-461253F9C6D0 " target="blank">Legistar. </a></p>
-
-                </div>
-                <div class="col"></div>
-              </div>
-            </div>
-
-          </div>
-        </div>
-      </div>
-
-
-      <div class="col-md-4">
-        <div class="card card-get-active card-hover" data-toggle="modal" data-target=".learn_modal" class="active_card">
-          <div class="card-content">
-            <h3 class="center card-get-active-header">Learn More</h3>
-            <p class="card-get-active-body">Dig deeper into the articles, papers, and books we used to make the website.</p>
-          </div>
-        </div>
-        <div class="modal fade learn_modal" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
-          <div class="modal-dialog modal-lg">
-            <div class="modal-content">
-              <div class="row modal-close">
-                <div class="col-11"></div>
-                <div class="col-1">
-                  <button type="button" class="btn btn-secondary modal-close-button" data-dismiss="modal"><b>X</b></button>
-                </div>
-              </div>
-              <h3 class="center">Learn More</h3>
-              <div class="row">
-                <div class="col"></div>
-                <div class="col-md-10">
-                  <p>Here are all of the articles and documents we used in the creation of this website.* </p>
-                  <div class="csl-bib-body" style="line-height: 1.35; margin-left: 2em; text-indent:-2em;">
-                    <div class="csl-entry"><a href="https://www.schools.nyc.gov/docs/default-source/default-document-library/2019nychsdirectorycitywideenglish" target="_blank">"2019 NYC High School Directory."</a> (Accessed March 12, 2019)
-                      <br><br>This document tells students and their parents information about all high schools in New York City and guides them through the matching process.</div>
-                    <div class="csl-entry"><a href="https://ibo.nyc.ny.us/iboreports/preferences-and-outcomes-a-look-at-new-york-citys-public-high-school-choice-process.html" target="_blank">“A Look at New York City’s Public High School Choice
-                        Process.”</a> New York City Indepdent Budget Office. (October 2016)
-                      <br><br>This report was used to inform our DOE example.</div>
-                    <div class="csl-entry"><a href="https://www.alliedmedia.org/peoples-ai" target="_blank">“A People’s Guide to AI.”</a> Allied Media Projects. (September 18, 2018)
-                      <br><br>Systems that use artificial intelligence are quietly becoming present in more and more parts of our lives. But
-                      what does this technology really mean for people, both right now and in the future?</div>
-                    <div class="csl-entry"><a href="https://arxiv.org/abs/1711.01134?context=stat" target="_blank">“Accountability of AI under the Law: The Role of Explanation.”</a> Doshi-Velez, F., Kortz, M., Budish, R., Bavitz, C., Gershman,S.,
-                      O’Brien, D., Schieber, S., Waldo, J., Weinberger, D., & Wood, A. <i>ArXiv Preprint</i>, ArXiv:1711.01134. (November,2017)
-                      <br><br>This article reviews current frameworks for the concept of explanation, for both AI and human decisions. It defines explanation as “a human-interpretable description of the process by which a decision-maker took a
-                      particular
-                      set of inputs and reached a particular conclusion.” An explanation should be able to answer at least one of the following questions: What were the main factors in a decision? Would changing a certain factor have changed the
-                      decision?</div>
-                    <div class="csl-entry"><a href="https://www2.deloitte.com/insights/us/en/focus/cognitive-technologies/artificial-intelligence-government.html" target="_blank">“AI-Augmented Government.”</a> Eggers, W., Schatsky, D., & Viechnicki,
-                      P. <i>Deloitte Insights.</i> (April 26, 2017)
-                      <br><br>The purpose of this piece is to outline the ways in which AI can improve government efficiency by shifting workers’ time from routine tasks to “high value work." One of the key points made is that AI tech can help work
-                      around resource constraints.</div>
-                    <div class="csl-entry"><a href="https://www.nytimes.com/2019/01/31/opinion/ai-bias-healthcare.html" target="_blank">“A.I. Could Worsen Health Disparities.”</a> Khullar, Dhruv. <i>The New York Times, Opinion Section.</i> (January
-                      31, 2019)
-                      <br><br>There are many questions about whether AI actually works in medicine, and where it works. Could the use of AI in medicine worsen health disparities? There are at least three reasons to believe it might. The first is a
-                      training problem. Second, because AI is trained on real-world data, it risks incorporating, entrenching and
-                      perpetuating the economic and social biases that contribute to health disparities in the first place. Third, even ostensibly fair, neutral AI has the potential to worsen disparities if its implementation has disproportionate
-                      effects for certain groups.</div>
-                    <div class="csl-entry"><a href="http://algorithmtips.org/" target="_blank">“Algorithm Tips – Resources and Leads for Investigating Algorithms in Society.”</a> Diakopoulos, N., Trielli, D., Yang, A., & Gao, A. (n.d.). (Accessed
-                      February 2, 2019)
-                      <br><br>Algorithm Tips helps users start investigating algorithmic decision-making power in society. The site offers a database of a curated set of algorithms being using in the US Federal government.</div>
-                    <div class="csl-entry"><a href="https://ainowinstitute.org/aiareport2018.pdf" target="_blank">"Algorithmic Impact Assessments."</a> Reisman, D., Schultz, J., Crawford, K., & Whittaker, M. AI Now. (April 2018)
-                      <br><br>As governments move to adopt new automated decision systems, Algorithmic Impact Assessments (AIA) can help agencies and the public determine whether these systems promote fairness, justice, and due process or whether
-                      they infringe on those values. This paper outlines the methodology for an AIA.</div>
-                    <div class="csl-entry"><u>Algorithms of Oppression: How Search Engines Reinforce Racism.</u> Noble, Safiya Umoja. New York: New York University Press (2018)
-                      <br><br>Safiya Umoja Noble challenges the idea that search engines like Google offer an equal playing field for all forms of ideas, identities, and activities. Data discrimination is a real social problem. Noble argues that the
-                      combination of private interests in promoting certain sites, along with the monopoly status of a relatively
-                      small number of Internet search engines, leads to a biased set of search algorithms that privilege whiteness and discriminate against people of color, especially women of color.</div>
-                    <div class="csl-entry"><u>Automating Inequality: How High-Tech Tools Profile, Police, and Punish the Poor.</u> Eubanks, Virginia. St. Martin’s Press. (2018)
-                      <br><br>Marginalized groups face higher levels of data collection when they access public benefits, walk through highly policed neighborhoods, enter the healthcare system, or cross national borders. That data acts to reinforce
-                      their
-                      marginality when it is used to target them as suspicious and needing extra scrutiny. Historically marginalized groups are singled out for punitive public policy and more intense surveillance, and the cycle begins again. </div>
-                    <div class="csl-entry"><a href="https://doi.org/10.1126/science.aal4321" target="_blank">“Beyond Prediction: Using Big Data for Policy Problems.”</a> Athey, Susan. <i>Science</i>, 355, no. 6324, pages 483–85. (February 3, 2017)
-                      <br><br>Machine-learning prediction methods have been extremely productive in applications ranging from medicine to allocating fire and health inspectors in cities. However, there are a number of gaps between making a prediction
-                      and making a decision. Underlying assumptions need to be understood in order to optimize data-drivenn decision-making.</div>
-                    <div class="csl-entry"><a href="https://lawdigitalcommons.bc.edu/cgi/viewcontent.cgi?referer=https://www.google.com/&httpsredir=1&article=3351&context=bclr/" target="_blank">“Big Data and Due Process: Toward a Framework to Redress
-                        Predictive Privacy Harms.”</a> Crawford, Kate, and Jason Schultz. <i>BCL Rev.</i>, 55, page 93 (January 29, 2014)
-                      <br><br>The article outlines the ways in which Big Data expands the harms to privacy through its reliance on data that is more and more specific (e.g. PII or personally identifiable information). The article 1) discusses how
-                      personal information can be amassed and how prediction can be harmful, 2) why traditional privacy protections are insufficient, 3) goes over the history of due process in the courts, 4) explains the challenges of due process in
-                      ADS cases, and 5) suggests ways to have better cross-examination.</div>
-                    <div class="csl-entry"><a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=2477899" target="_blank">“Big Data’s Disparate Impact.”</a> Barocas, S. & Selbst, A. <i>Cal. L. Rev.</i>, 104, page 671. (September 30, 2016)
-                      <br><br>An explanation of how data mining discriminates. “By definition, data mining is always a form of statistical (and therefore seemingly rational) discrimination. Indeed, the very point of data mining is to provide a
-                      rational basis upon
-                      which to distinguish between individuals and to reliably confer to the individual the qualities possessed by those who seem statistically similar.” But this can impact protected classes. </div>
-                    <div class="csl-entry"><a href="https://www.nytimes.com/2015/02/22/technology/bringing-big-data-to-the-fight-against-benefits-fraud.html" target="_blank">“Bringing Big Data to the Fight Against Benefits Fraud.”</a> Singer,
-                      Natasha. <i>The New York Times</i>, Technology Section. (December 21, 2017)
-                      <br><br>To detect possible abuse of programs or benefits, state and local governments are turning to data-mining techniques long used by financial services companies.</div>
-                    <div class="csl-entry">“Can AI Be Taught to Explain Itself.” Kuang, Cliff. <i>New York Times.</i> (2017)
-                      <br><br>Some algorithms (especially deep neural networks) are so complex that we don’t understand how they come to their predictions. This is a real problem, and we need to be able to explain and justify what’s
-                      happening in the algorithm’s black box. Some researchers are developing techniques for explainability and visualization.</div>
-                    <div class="csl-entry"><a href="https://aiethics.princeton.edu/case-studies/case-study-pdfs/" target="_blank">“Case Study PDFs.”</a> Princeton Dialogues on AI and Ethics. (January 24, 2019)
-                      <br><br>Case studies of a fictional set of ADSs that are designed to prompt reflection and discussion about issues at the intersection of AI and Ethics.</div>
-                    <div class="csl-entry"><a href="https://nyc.streetsblog.org/2019/02/08/city-budget-gives-buses-a-key-boost-they-need-at-intersections/" target="_blank">“City Budget Gives Buses A Key Boost at Intersections.”</a> <i>Streetsblog New
-                        York City.</i> (February 8, 2019)
-                      <br><br>City buses are using new sensor technology and machine learning techniques to improve the bus tranist system.</div>
-                    <div class="csl-entry"><a href="http://mitgovlab.org/news/coming-clean-using-data-science-to-address-wrongful-convictions/" target="_blank">“Coming Clean, Using Data Science to Address Wrongful Convictions.”</a> Zomer, Alisa.
-                      <i>MIT Gov Lab.</i> (May 2018)
-                      <br><br>This article tells the story of those wrongfully convicted of drug offenses in Massachusetts due to chemists who falsified drug tests. The ACLU stepped in and used data science in combination with litigation to get the
-                      state to throw out these wrongful cases en masse.</div>
-                    <div class="csl-entry"><a href="http://arxiv.org/abs/1805.03677" target="_blank">“The Dataset Nutrition Label: A Framework To Drive Higher Data Quality Standards.”</a> Holland, S., Hosny, A., Newman, S., Joseph, J., & Chmielinski,
-                      K. <i>ArXiv</i>, ArXiv:1805.03677 [Cs]. (May 9, 2018)
-                      <br><br>The Dataset Nutrition Label (the Label) is a diagnostic framework that lowers the barrier to standardized data analysis. The Label provides a distilled yet comprehensive overview of dataset “ingredients” before AI model
-                      development. Building a Label that can be applied across domains and data types requires that the framework
-                      itself be flexible and adaptable. As such, the Label is comprised of diverse qualitative and quantitative modules generated through multiple statistical and probabilistic modelling backends, but displayed in a standardized
-                      format.</div>
-                    <div class="csl-entry"><a href="http://web.stanford.edu/~niederle/School%20Matching%20Systems.pdf" target="_blank">“The Design of School Choice Systems in NYC and Boston: Game-Theoretic Issues."</a> Roth, Alvin E. n.d.. (2008)
-                      <br><br>Outlines the game theory techniques within NYC and Boston’s school selection systems.</div>
-                    <div class="csl-entry"><a href="https://www.nyulawreview.org/wp-content/uploads/2019/04/NYULawReview-94-Richardson-Schultz-Crawford.pdf" target="_blank">"Dirty Data, Bad Predictions: How Civil Rights Violations Impact Police Data,
-                        Predictive Policing Systems, and Justice."</a> Richardson, R., Schultz, J., & Crawford, K. <i>New York University Law Review Online.</i> (March 2019)
-                      <br><br>Law enforcement agencies are increasingly using algorithmic predictive policing systems to forecast criminal activity and allocate police resources. These policing practices shape the environment and the methodology by
-                      which data is created, which leads to inaccuracies, skews, and forms of systemic bias embedded in the data
-                      (‘dirty data’). Predictive policing systems informed by such data cannot escape the legacy of unlawful or biased policing practices that they are built on.</div>
-                    <div class="csl-entry"><a href="https://doi.org/10.1257/aer.p20171084" target="_blank">“Does Machine Learning Automate Moral Hazard and Error?”</a> Mullainathan, S. & Obermeyer, Z. <i>The American Economic Review</i>, 107, no.5,
-                      pages 476-80. (May 2017)
-                      <br><br>Machine learning is poised to transform health care. These efforts, though, are expanding in scope, from automating routine tasks to aiding in complex decisions. Health policy applications raise econometric concerns. One
-                      concern, the conflation of causation and prediction, is well understood. But another important, yet underappreciated,
-                      challenge is mismeasurement.</div>
-                    <div class="csl-entry"><a href="https://metrolabnetwork.org/wp-content/uploads/2018/01/Ethical-Guidelines-for-Applying-Predictive-Tools-within-Human-Services-2017.pdf" target="_blank">“Ethical Guidelines for Applying Predictive
-                        Tools within Human Services.”</a> <i> Metro Lab.</i> (Accessed January 18, 2019)
-                      <br><br>This report is intended to provide brief, practical guidance to human service agency leaders on how they can mitigate the risks that come with using predictive analytics. It is structured around four principles:
-                      engagement, model validation, review, and transparency. Each principle has its own specific cautions and recommendations.
-                      This report also includes a discussion of several foundational strategies related to data governance, crisis communications, and partnership that are important to any new application of predictive risk modeling.</div>
-                    <div class="csl-entry"><a href="https://ethicstoolkit.ai/" target="_blank">“Ethics & Algorithms Toolkit (beta).”</a> Anderson, D., Donaguro, J., McKinney, M., Nicklin, A., & Wiseman, J. (Accessed January 30, 2019)
-                      <br><br>A toolkit designed for public sector stakeholders. These stakeholders should use the toolkit whenever they're applying an algorithm to inform a decision in the public sector. Algorithmic bias can impact people when
-                      government organizations decide how to distribute services based on algorithmic outputs.</div>
-                    <div class="csl-entry"><a href="https://arxiv.org/abs/1712.03586" target="_blank">“Fairness in Machine Learning: Lessons from Political Philosophy.”</a> Binns, Reuben. <i>ArXiv Preprint</i>, ArXiv:1712.03586. (December 2017)
-                      <br><br>Reviews landscape of political philosophy and how it is (or isn’t) transferable to algorithmic discrimination. Briefly mentions kinds of fairness measures and then goes into how we measure discrimination now and whether
-                      those frameworks apply to machine learning.</div>
-                    <div class="csl-entry"><a href="https://ai.shorensteincenter.org/ideas/2018/11/26/follow-the-data-algorithmic-transparency-starts-with-data-transparency" target="_blank">“Follow the Data!”</a> Stoyanovich, Julia. Harvard
-                      Shorenstein Center. (November 27, 2019)
-                      <br><br>ADS transparency is not possible without data transparency. Agency culture must shift to acknowledge that accuracy and utility should not be the primary goals and must be balanced with the goal of equitable treatment of
-                      people in historically disadvantaged groups. ADS cannot be patched to be transparent and accountable.</div>
-                    <div class="csl-entry"><a href="https://repository.law.umich.edu/articles/518/" target="_blank">“The Future of Disparate Impact.”</a> Primus, Richard. <i>Mich. L. Rev.</i>, 108, page 1341. (2010)
-                      <br><br>Ricci Supreme Court case shows a tension between disparate impact (identity conscious view of the world and how it impacts people) and disparate treatment (equal treatment, race neutral view of the world). Looks at the
-                      impact of trying to solve Title VII issues in the courts given this tension.</div>
-                    <div class="csl-entry"><a href="https://ai.shorensteincenter.org/ideas/2018/12/1/federal-housing-history-shows-that-algorithmic-bias-carries-long-lasting-disastrous-consequences-29jz2" target="_blank">“The History of U.S. Housing
-                        Segregation Points to the Devastating Consequences of Algorithmic Bias.”</a> Greenwalt, Lauren. <i>The Ethical Machine.</i> (December 6, 2018)
-                      <br><br>Algorithms and algorithmic discrimination are often presented as recent phenomena. While big data and computational power have enabled more advanced algorithms and reduced the need for human calculation, simpler
-                      algorithms have long been used to allocate private and public goods, and not without prejudice.</div>
-                    <div class="csl-entry"><a href="https://hbr.org/2018/01/how-ai-could-help-the-public-sector" target="_blank">“How AI Could Help the Public Sector.”</a> Martinho-Truswell, Emma. <i>Harvard Business Review.</i> (January 26, 2018)
-                      <br><br>“If they are used well, artificial intelligence programs can make our government services faster and more tailored.” This article makes a case for the benefits of having AI in the public sector for “lowest hanging
-                      fruit,” repetitive tasks with easy answers. We believe this to be a naive and overly positive view.</div>
-                    <div class="csl-entry"><a href="https://theintercept.com/2018/10/08/food-stamps-snap-program-usda/" target="_blank">“How an Algorithm Kicks Small Businesses Out of the Food Stamps Program on Dubious Fraud Charges.”</a> Brown, Claire H. <i>The Intercept.</i> (October 8, 2018)
-                      <br><br>This is the original reporting we used to re-tell Porfirio Mejia's story and how his bodega was affected by mistakes in a USDA algorithm designed to catch SNAP (food stamp) fraud.</div>
-                    <div class="csl-entry"><a href="https://www.nytimes.com/2014/12/07/nyregion/how-game-theory-helped-improve-new-york-city-high-school-application-process.html" target="_blank">“How Game Theory Helped Improve New York City’s High
-                        School Application Process"</a> Tullis, Tracy. <i>New York Times.</i> (December 5, 2014)
-                      <br><br>This article served as the basis for our DOE example.</div>
-                    <div class="csl-entry"><a href="https://doi.org/10.1093/qje/qjx032" target="_blank">“Human Decisions and Machine Predictions.”</a> Kleinberg, J., Lakkaraju, H., Leskovec, J., Ludwig, J., & Mullainathan, S. <i>The Quarterly Journal
-                        of Economics</i>, 133, no.1, pages 237–93. (February 1, 2018)
-                      <br><br>Can machine learning improve human decision making? Bail decisions provide a good test case. The results suggest that while machine learning can be valuable, realizing this value requires integrating these tools into
-                      an economic framework. The economic framework needs to include being clear about the link between predictions and decisions, specifying the scope of payoff functions, and constructing unbiased decision counterfactuals.</div>
-                    <div class="csl-entry"> <a href="https://www.nber.org/chapters/c14009.pdf" target="_blank">“The Impact of Machine Learning on Economics.”</a> Athey, Susan. <i>NBER.</i> (January 2018)
-                      <br><br>This paper provides an assessment of the early contributions of machine learning to economics, as well as predictions about its future contributions. It overviews some themes from the literature on machine learning,
-                      and then draws some contrasts with traditional approaches to estimating the impact of counterfactual policies in economics.</div>
-                    <div class="csl-entry"><a href="https://www.nytimes.com/2019/01/01/us/kansas-city-smart-technology.html" target="_blank">“In High-Tech Cities, No More Potholes, but What About Privacy?”</a> Williams, Timothy. <i>The New York
-                        Times</i>, US Section. (January 1, 2019)
-                      <br><br>Smart Cities are being developed in cities like Kansas City. These cities are trying to both improve the city and potentially get more attention from the Tech industry. Smart City projects should be viewed with some
-                      trepidation. For example, in Kansas City, the installation of Smart City equipment by Sprint and Cisco happened without a
-                      competitive bidding process. There are many questions that linger about who owns the data from these projects.</div>
-                    <div class="csl-entry"><a href="http://arxiv.org/abs/1609.05807" target="_blank">“Inherent Trade-Offs in the Fair Determination of Risk Scores.”</a> Kleinberg, J., Mullainathan, S., & Raghavan, M. <i>ArXiv</i>, ArXiv:1609.05807
-                      [Cs, Stat]. (September 19, 2016)
-                      <br><br>Recent discussion in the public sphere about algorithmic classification has involved tension between competing notions of what it means for a probabilistic classification to be fair to different groups. The authors
-                      formalize three fairness conditions that lie at the heart of these debates and prove that except in highly constrained special
-                      cases, there is no method that can satisfy these three conditions simultaneously. These results suggest some of the ways in which key notions of fairness are incompatible with each other and there is a framework to think of the
-                      trade-offs between them.</div>
-                    <div class="csl-entry"><a href="https://www.propublica.org/article/machine-bias-risk-assessments-in-criminal-sentencing" target="_blank">"Machine Bias."</a> Angwin,J. & Larson, J. <i>ProPublica. </i> (May 23, 2016)
-                      <br><br>Risk assessment scores are beginning to be used to inform decisions about who can be set free at every stage of the criminal justice system. However risk assessments might add bias into courts and exacerbate unjust
-                      disparities that already exist.</div>
-                    <div class="csl-entry"><a href="https://www1.nyc.gov/office-of-the-mayor/news/251-18/mayor-de-blasio-first-in-nation-task-force-examine-automated-decision-systems-used-by" target="_blank">“Mayor de Blasio Announces First-In-Nation
-                        Task Force To Examine Automated Decision Systems.”</a> The official website of the City of New York. (May 16, 2018)
-                      <br><br> According to the NYC Mayor’s Office: “The New York City Automated Decision Systems Task Force (ADS Task Force) was established by Local Law 49 of 2018 and is tasked with recommending a process for reviewing the City’s
-                      use of automated decision systems (more commonly known as algorithms). Because many City agencies and offices use algorithms to aid
-                      their decision-making, and because automated decision systems are becoming more prevalent in all fields, the City is examining ways to ensure these systems align with the goal of making New York City a fairer and more equitable
-                      place.”</div>
-                    <div class="csl-entry">"The New York City High School Match." Adbulkadiroglo, A., Roth & Parthak, P. <i>The American Economic Review</i>, 95, no. 2, pages 364-367. (2005)
-                      <br><br>This article was used to inform the DOE example.</div>
-                    <div class="csl-entry"><a href="https://www1.nyc.gov/assets/nycha/downloads/pdf/TSAPlan.pdf" target="_blank">“New York City Tenant Selection and Assignment Plan.”</a> New York City Housing Authority. (September 13, 2016)
-                      <br><br>This article was used to inform the NYCHA example.</div>
-                    <div class="csl-entry"><a href="https://www.newyorker.com/tech/annals-of-technology/new-york-citys-bold-flawed-attempt-to-make-algorithms-accountable" target="_blank">“New York City’s Bold, Flawed Attempt to Make Algorithms
-                        Accountable.”</a> Powles, Julia. <i>The New Yorker.</i> (December 20, 2017)
-                      <br><br>This article questions the effectiveness the NYC ADS Taskforce law will actually have and asks “automated systems guide the allocation of everything from firehouses to food stamps. So why don’t we know more about them?”
-                    </div>
-                    <div class="csl-entry"><a href="https://gizmodo.com/new-york-city-is-fighting-fires-with-data-mining-1509004543" target="_blank">“New York City Is Using Data Mining to Fight Fires.”</a> Sorokanich, Bob. <i>Gizmodo.</i> (January
-                      25, 2014)
-                      <br><br>This article was used to inform the description of an example for FDNY that was ultimately not used in this website.</div>
-                    <div class="csl-entry"><u>On Democracy.</u> Dahl, Robert A. Yale University Press. (2008)
-                      <br><br>Provides a primer on democracy that clarifies what it is, why it is valuable, how it works, and what challenges it confronts.</div>
-                    <div class="csl-entry"><a href="https://ny.curbed.com/2018/8/24/17775290/new-york-city-automated-decision-systems" target="_blank">“One of New York City’s Most Urgent Design Challenges Is Invisible.”</a> Budds, Diana. <i>Curbed
-                        NY.</i> (August 24, 2018)
-                      <br><br>Automated decision making systems have quietly been influencing New York City’s operations and governance for decades. While these systems are touted for their ability to standardize decisions and perhaps counteract
-                      human bias and error, they’re far from neutral. The people who design these systems bring their biases, conscious or unconscious, with them. Depending on how the algorithms are designed, they can help further equity and fairness
-                      or perpetuate existing biases.</div>
-                    <div class="csl-entry"><a href="https://thehill.com/opinion/technology/429883-ocasio-cortez-is-right-algorithms-are-biased-but-we-can-make-them-fairer" target="_blank">“Ocasio-Cortez Is Right, Algorithms Are Biased — but We Can
-                        Make Them Fairer.”</a>
-                      Ayala, Christine. <i>The Hill.</i> (February 13, 2019)
-                      <br><br>Congresswoman Ocasio-Cortez questions whether machines offer a foolproof way to improve decision-making by removing human error and bias.</div>
-                    <div class="csl-entry"><a href="https://www.pewinternet.org/2018/11/16/public-attitudes-toward-computer-algorithms/" target="_blank">“Public Attitudes Toward Computer Algorithms.”</a> Smith, Aaron. Pew Research Center. (November
-                      16, 2018)
-                      <br><br>Research about public perceptions about algorithmic decision making. Majority of people have skepticism about algorithmic decision making in the four examples they gave (credit scores, parole, video interviews, resume
-                      screening).</div>
-                    <div class="csl-entry"><a href="https://www.wired.com/story/san-francisco-could-be-first-ban-facial-recognition-tech/" target="_blank">“San Francisco Could Be First to Ban Facial Recognition Tech.”</a> Barber, Gregory.
-                      <i>Wired.</i> (January 31, 2019)
-                      <br><br>San Francisco has decided to NOT use technology and a bit about their reasons why. Provides some information about why a city might say no to powerful technology.</div>
-                    <div class="csl-entry"><a href="https://medium.com/s/story/the-seductive-diversion-of-solving-bias-in-artificial-intelligence-890df5e5ef53" target="_blank">“The Seductive Diversion of ‘Solving’ Bias in Artificial
-                        Intelligence,”</a> Poweles, Julia. n.d. (December 7, 2018)
-                      <br><br>Powles discusses three problems with the focus on bias in AI. First, she thinks that talking about AI bias obscures that bias is at its root a social problem and the logic of automation cannot solve it. Second, she
-                      thinks that tackling bias can have perverse consequences (do we really want facial recognition software to recognize
-                      women of color better?). Third, focusing on bias means that we don’t question whether we should be using AI at all.</div>
-                    <div class="csl-entry"><a href="https://www.nytimes.com/2017/05/01/us/politics/sent-to-prison-by-a-software-programs-secret-algorithms.html" target="_blank">“Sent to Prison by a Software Program’s Secret Algorithms."</a> Liptak,
-                      Adam. <i>The New York Times.</i> (May 1, 2017)
-                      <br><br>The article outlines the use of machine learning algorithms in the justice system and how they are being evaluated by the courts.</div>
-                    <div class="csl-entry"><a href="http://www.embracerace.org/1/post/2017/09/integratenyc4me-pushing-back-against-segregated-public-schools-in-nyc-and-beyond.html" target="_blank">“Student Activists Push to Integrate NYC
-                        Schools.”</a> EMBRACERACE. (September 26, 2017)
-                      <br><br>IntegrateNYC4Me is a youth led organization fighting segregation in the NYC. They talk about their mission in this interview and the ways high school matching could be designed to promote integration.</div>
-                    <div class="csl-entry"><a href="https://openscholarship.wustl.edu/cgi/viewcontent.cgi?article=1166&context=law_lawreview" target="_blank">“Technological Due Process.”</a> Citron, Danielle Keats. <i>Wash. UL Rev., 85, page
-                        1249.</i> (2008)
-                      <br><br>This article demonstrates how an “inquisitorial model” of quality control can replace some parts of the adversarial justice system. Offers a framework for enhancing transparency, accountability, and accuracy of rules in
-                      ADS.</div>
-                    <div class="csl-entry"><a href="https://doi.org/10.1177/2053951718756684" target="_blank">“Understanding Perception of Algorithmic Decisions: Fairness, Trust, and Emotion in Response to Algorithmic Management.”</a> Lee, Min Kyung.
-                      <i>Big Data &amp; Society</i> 5, no. 1 (March 8, 2018).
-                      <br><br>Researchers set out to understand how people perceived managerial type decisions made by algorithms versus decisions made by humans. They presented to their research participants decisions and said that they were made by
-                      an algorithm or by a huamn and measure participants' perceptions of fairness and trustworthiness of the decisions.
-                      They found that human decisions evokes some positive emotion, whereas algorithmic decisions generated more mixed responses from participants.</div>
-                    <div class="csl-entry"><a href="http://fortune.com/longform/ai-bias-problem/" target="_blank">“Unmasking A.I.’s Bias Problem.”</a> Vanian, Jonathan. <i>Fortune.</i> (June 25, 2018)
-                      <br><br>Algorithms do not understand historical structures and therefore can amplify bias. In order to overcome this issue, more transparency and openness, better training data or recognition of bias in data, rigorous testing of
-                      systems, and diverse viewpoints on tech teams is needed.</div>
-                    <div class="csl-entry"><a href="https://www.theverge.com/2018/3/21/17144260/healthcare-medicaid-algorithm-arkansas-cerebral-palsy" target="_blank">“What Happens When an Algorithm Cuts Your Health Care.”</a> Lecher, Colin. <i>The
-                        Verge.</i> (March 21, 2018)
-                      <br><br>The article goes over the ways in which algorithms used in the healthcare have denied people care. We need a better way for people to make it known they are being denied services and see these problems coming. But then
-                      there is also the argument from the other side: the general public does not necessarily need to understand
-                      the algorithm. We use lots of tools we do not understand that make our lives more efficient. We had some disagreements with this article and its assumptions that algorithms are necessarily smarter than us.</div>
-                    <div class="csl-entry"><a href="https://hbr.org/2018/07/want-less-biased-decisions-use-algorithms" target="_blank">“Want Less Biased Decisions? Use Algorithms.”</a> Miller, Alex P. <i>Harvard Business Review.</i> (July 26, 2018)
-                      <br><br>Critique of those who criticize algorithms as biased. Argues that yes algorithms are biased, but they’re better than the status quo. Cites five research examples where algorithms did better than human decision making. We
-                      remain skeptical. Their examples forget a lot of history and examples of failed algorithms that exacerbated racism,
-                      and they don’t explain how we can ensure that algorithms are less biased.</div>
-                    <div class="csl-entry"><a href="http://www.fast.ai/2018/08/07/hbr-bias-algorithms/" target="_blank">“What HBR Gets Wrong About Algorithms and Bias.”</a> Thomas, Rachel. <i>fast.ai</i>(August 7, 2018)
-                      <br><br>Answer to Harvard Business Review's "Want Less-Biased Decisions?" Algorithms usually have no appeals method and algorithms used on a much larger scale than human decisions replicate bias at scale. “We have a
-                      responsibility to understand the real-world systems with which our work will interact, and to not lose sight of the actual people who will be impacted.”</div>
-                    <div class="csl-entry"><u>Weapons of Math Destruction: How Big Data Increases Inequality and Threatens Democracy.</u> O’Neil, Cathy. First edition. New York: Crown (2016)
-                      <br><br>Cathy O’Neil explores the dark side of algorithms, which are often opaque, unregulated, and incontestable, even when they’re wrong. Most troubling, they can reinforce discrimination. Using personal stories this book
-                      exposes the black box models that shape our future as individuals and as a society.</div>
-                    <p class="citation">*We also conducted interviews with experts, city officials, practitioners, and real people to make this website as accurate and friendly as possible!</p>
-                  </div>
-                </div>
-                <div class="col"></div>
-              </div>
-
-            </div>
-
-          </div>
-
-        </div>
-      </div>
-
-
-    </div>
-  </div>
-
-
-
-
-
   <!-- About Us Page -->
   <div id="aboutUs" class="container page new_section finalpage">
     <div data-scroll="toggle(.fromBottomIn, .fromBottomOut) once">
-      <h1 class="chapter_number">6</h1>
+      <h1 class="chapter_number">4</h1>
       <br>
-      <h1 class="chapter_title">About Us</h1>
+      <h1 class="chapter_title">Credits</h1>
     </div>
     <div class="row align-items-top">
       <div class="col"></div>
       <div class="col-md-10">
-        <h4 class="credits">We're four data and design nerds determined to make government services the best they can be. This website is our master's thesis for the Harvard Kennedy School. </h4>
+        <h4 class="credits">TODO: Update to acknowledge original creators, link to original website, acknowledge font and icon IP.
+
+          Aki Younge, Deepra Yusuf, Elyse Voegeli, Jon Truong
+
+        We're four data and design nerds determined to make government services the best they can be. This website is our master's thesis for the Harvard Kennedy School. </h4>
       </div>
       <div class="col"></div>
     </div>
-
-
-    <div class="row align-items-top">
-      <div class="col-md-3">
-        <img src="img/aki.jpg" class="bio_images hvr-wobble-vertical" alt="Drawing of Aki, person with red glasses, round gold earrings, and dark hair in a ponytail">
-        <h3 class="center bio_name"> Aki </h3>
-        <p class="center"> Project Management <br> + <br> Data Wrangler </p>
-        <p class="bio center"> <a href="https://www.linkedin.com/in/akina-younge/" target="_blank"><i data-feather="linkedin"></i></a>
-          &nbsp;&nbsp;&nbsp;
-          <a href="https://twitter.com/AkiYounge" target="_blank"><i data-feather="twitter"></i></a>
-&nbsp;&nbsp;&nbsp;
-          <a href="https://www.instagram.com/akiyounge/" target="_blank"><i data-feather="instagram"></i></a></p>
-        <p class="bio"> Aki Younge is a futurist thinker and racial justice advocate who believes in empowering communities to use data and technology to dismantle systems of oppression.</p>
-      </div>
-      <div class="col-md-3">
-        <img src="img/dee.jpg" class="bio_images hvr-wobble-vertical" alt="Drawing of Dee, a person with light pink glasses and dark medium-length hair worn down ">
-        <h3 class="center bio_name"> Deepra </h3>
-        <p class="center"> Content Development <br> + <br> Research</p>
-        <p class="bio center"> <a href="https://www.linkedin.com/in/deepra-yusuf-b9374263/" target="_blank"><i data-feather="linkedin"></i></a>&nbsp;&nbsp;&nbsp;
-        <a href="https://twitter.com/deey_1971" target="_blank"><i data-feather="twitter"></i></a>
-        &nbsp;&nbsp;&nbsp;
-        <a href="https://www.instagram.com/deeyusuf/" target="_blank"><i data-feather="instagram"></i></a>
-        </p>
-        <p class="bio"> Deepra Yusuf is a native New Yorker, former government analyst, and design thinker committed to finding ways governments and technology can form ethical and symbiotic relationships.</p>
-          </div>
-      <div class="col-md-3">
-        <img src="img/elyse2.jpg" class="bio_images hvr-wobble-vertical" alt="Drawing of Elyse, a person with squiggly black earrings, teal eyeliner, and short gold hair">
-        <h3 class="center bio_name"> Elyse </h3>
-        <p class="center">Design<br> + <br> Engineering</p>
-        <p class="bio center"> <a href="https://github.com/evoeges" target="_blank"><i data-feather="github"></i></a>&nbsp;&nbsp;&nbsp;
-          <a href="https://www.linkedin.com/in/elyse-voegeli-037781124/" target="_blank"><i data-feather="linkedin"></i></a>
-          &nbsp;&nbsp;&nbsp;
-          <a href="https://twitter.com/evogues" target="_blank"><i data-feather="twitter"></i></a>
-          &nbsp;&nbsp;&nbsp;
-          <a href="https://www.instagram.com/evogues/" target="_blank"><i data-feather="instagram"></i></a></p>
-        <p class="bio"> Elyse Voegeli is a data analyst and designer committed to making tech accountable, accessible, and delightful.</p>
-      </div>
-      <div class="col-md-3">
-        <img src="img/jon.jpg" class="bio_images hvr-wobble-vertical" alt="Drawing of Jon, a person with dark round glasses and long black hair worn down.">
-        <h3 class="center bio_name">Jon </h3>
-        <p class="center"> Design <br> + <br> Content Development</p>
-        <p class="bio center"> <a href="https://github.com/ohbother/" target="_blank"><i data-feather="github"></i></a>
-        &nbsp;&nbsp;&nbsp;
-        <a href="https://www.linkedin.com/in/jont/" target="_blank"><i data-feather="linkedin"></i></a></p>
-        <p class="bio">Jon Truong works at the intersection of digital tools and social change in urban settings.</p>
-      </div>
-    </div>
-
-
 
     <div class="row align-items-top center">
 
@@ -2441,23 +1115,6 @@
       </div>
       <div class="col"></div>
     </div>
-
-    <div class="row align-items-top center contact_info">
-
-      <div class="col"></div>
-      <div class="col-md-8">
-        <p class="citation"><i data-feather="github"></i><b> Check us out on <a href="https://github.com/evoeges/pae" target="_blank">Github!</a></b> &nbsp; &nbsp;<i data-feather="mail"></i> <b>Feedback or questions? Send us an <a
-              href="mailto:info@automating.nyc">email!</a></b></p>
-      </div>
-      <div class="col"></div>
-    </div>
-  </div>
-
-
-<!--  <div class="footer mobile_only hidden" id="banner">
-    <a href="https://www1.nyc.gov/site/adstaskforce/events/events.page" target="_blank">The next public meeting of the ADS Task Force is on May 30th!</a>
-  </div> -->
-
 
 
   <script src="ScrollTrigger.min.js"></script>
