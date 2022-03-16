@@ -36,7 +36,8 @@
   <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400|Source+Serif+Pro:400,600,700" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Nunito:200,300,400,600,700" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Lora|Quattrocento" rel="stylesheet">
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+  <!-- <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous"> -->
+  <script src="https://kit.fontawesome.com/53ba195dd1.js" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="css/materialize.min.css">
   <link rel="stylesheet" href="css/bootstrap.min.css">
   <link rel="stylesheet" href="css/style.css">
@@ -96,11 +97,15 @@
 
 
     <li class="nav-item">
-      <a class="nav-link" href="#Examples"><span class="desktop_nav">Example</span> <i class="fas fa-circle mobile_nav"></i></a>
+      <a class="nav-link" href="#Examples"><span class="desktop_nav">Examples</span> <i class="fas fa-circle mobile_nav"></i></a>
     </li>
 
     <li class="nav-item sub_nav">
       <a class="nav-link" href="#nypl_accordian"><span class="desktop_nav">Public Library</span> <i class="fas fa-circle mobile_nav"></i></a>
+    </li>
+
+    <li class="nav-item sub_nav">
+      <a class="nav-link" href="#resume_accordian"><span class="desktop_nav">Resume Screening</span> <i class="fas fa-circle mobile_nav"></i></a>
     </li>
 
     <li class="nav-item">
@@ -315,13 +320,13 @@
       <div data-scroll="toggle(.fromBottomIn, .fromBottomOut) once">
         <h1 class="chapter_number">3</h1>
         <br>
-        <h1 class="chapter_title">Example</h1>
+        <h1 class="chapter_title">Examples</h1>
       </div>
 
       <div class="row align-items-center">
         <div class="col"></div>
         <div class="col-md-10 cases_header">
-          <h3 class="center"> Learn about a real ADT being used in NYC.</h3>
+          <h3 class="center"> Learn about a real examples of ADTs.</h3>
         </div>
         <div class="col"></div>
       </div>
@@ -449,6 +454,84 @@
             </div>
             <div class="col"></div>
           </div> -->
+        </div>
+      </div>
+
+      <!-- RESUME SCREENING CASE STUDY -->
+      <button id="resume_accordian" class="accordion"><i class="fas fa-file"></i>&nbsp; Resume Screening &nbsp;<i class="fas fa-sort-down"></i>
+      </button>
+      <div class="panel">
+        <div id="NYPL_case">
+          <div class="row align-items-icon_center">
+            <div class="col"></div>
+            <div class="col-md-8">
+              <h2 id="NYPL" class="case_title"> A common example of an AEDT: resume screening.</h2>
+            </div>
+            <div class="col"></div>
+          </div>
+          <div class="row align-items-center">
+            <div class="col"></div>
+            <div class="col-md-10">
+              <p class="problem_statement">
+                Employers get a vast number of applications for a small number of jobs. Reviewing each application manually might not be possible in some cases. But at the same time, employers want to make sure that all qualfied candidates have a shot at the job. How can employers quickly filter a large pile of resumes to find the most promising candidates?
+              </p>
+            </div>
+            <div class="col"></div>
+          </div>
+
+          <div class="row align-items-center">
+            <div class="col"></div>
+            <div class="col-md-7">
+              <h3>Employers often rely on ADT software to find the best resumes.</h3>
+              <p>
+                Here's how the most basic kind of resume screening works:</p>
+            </div>
+            <div class="col"></div>
+          </div>
+
+          <div class="row align-items-center">
+            <div class="col"></div>
+            <div class="col-md-3 center">
+              <span class="algorithm_icons">
+                <i class="fas fa-highlighter"></i>
+              </span>
+            </div>
+
+            <div class="col-md-4 center">
+
+              <span class="algorithm_icons"><i class="fa-brands fa-searchengin"></i></span>
+
+            </div>
+
+
+            <div class="col-md-3 center">
+              <span class="algorithm_icons"><i class="fas fa-handshake"></i><span>
+            </div>
+            <div class="col"></div>
+          </div>
+
+          <div class="row">
+            <div class="col"></div>
+
+            <div class="col-md-3">
+              <h4 class="center">1. Data</h4>
+              <p>First, the resume screener tool needs (unsurprisingly!) your resume, often in a PDF or other document format.</p>
+
+              <p>Second, the employer gets to choose which keywords to look for. They'll choose keywords that they want to see in job applications, like "administrative experience" or "nursing."</p>
+            </div>
+
+            <div class="col-md-4">
+              <h4 class="center">2. Scan</h4>
+              <p>The AEDT then extracts as many words from the resume as possible, sometimes using text recognition to recognzie text in images. The AEDT is also usually smart enough to understand close synonyms, like "video editing" and "film editing."</p>
+            </div>
+
+            <div class="col-md-3">
+              <h4 class="center">3. Pick</h4>
+              <p>Finally, the AEDT gives the employer a ranked list <i>or</i> subset of the job applications to consider further.</p>
+              <p>Sometimes though, this process is automated. An employer can choose to automatically invite to interview (or reject) any candidate that does (or doesn't) meet their chosen keywords.</p>
+            </div>
+            <div class="col"></div>
+          </div>
         </div>
       </div>
     </div>
